@@ -8,120 +8,373 @@ Set `"image"` to a local file path (e.g., `"assets/machines/bale_plucker.jpg"`) 
 WORKFLOW_DATA = {
     "Spinning": {
         "icon": "🧶",
-        "description": "Conversion of raw textile fibers into spun yarn suitable for knitting.",
+        "description": "Conversion of raw staple fibers and filaments into high-quality knitting yarns across Rieter's 8 specialized spinning and yarn processing systems.",
         "subsections": {
-            "Blowroom": {
-                "description": "Opening, cleaning, dust removal, and blending of raw fiber bales into uniform laps or chute-fed flocks.",
+            "Fiber preparation machines": {
+                "description": "Blowroom and carding technology — engineered for efficient fiber utilization, gentle opening, cleaning, blending, and superior carded sliver quality.",
                 "flowchart_steps": [
-                    "Bale Plucking",
-                    "Coarse Cleaning",
-                    "Blending",
-                    "Fine Opening & Cleaning",
-                    "Foreign Matter / Dust Removal",
-                    "Chute Feed to Carding"
+                    "Bale Opening (UNIfloc A 12)",
+                    "Pre-Cleaning (UNIclean B 12 / B 15)",
+                    "Homogeneous / Multi-Component Blending (UNImix B 72/B 76 · UNIblend A 81)",
+                    "Fine Cleaning & Opening (UNIstore A 79 · UNIclean B 17)",
+                    "Foreign Matter Extraction & Air Transport (A 49 · Condensers A 21/A 22)",
+                    "High-Performance Carding (Card C 81 / Card C 77)"
                 ],
                 "machineries": [
                     {
-                        "step": "Bale Plucking",
-                        "machine_name": "Automatic Bale Plucker (Placeholder)",
-                        "input": "Compressed Fiber Bales",
-                        "output": "Small Fiber Tufts",
-                        "purpose": "Opens compressed cotton/synthetic bales into small tufts uniformly.",
+                        "step": "Complete Modular Blowroom Line",
+                        "machine_name": "Blowroom Line VARIOline & VARIOline ECOrized",
+                        "input": "Raw Cotton, Man-Made, or Recycled Fiber Bales",
+                        "output": "Opened, Cleaned & Blended Microtuft Flow to Cards",
+                        "purpose": "Variable blowroom concept delivering up to 2,400 kg/h output with 40% lower energy use and 1% raw material savings; VARIOline ECOrized cuts fiber transport energy by an additional 30%.",
                         "image": None
                     },
                     {
-                        "step": "Coarse Cleaning",
-                        "machine_name": "Pre-Cleaner / Step Cleaner (Placeholder)",
-                        "input": "Small Fiber Tufts",
-                        "output": "Partially Cleaned Fiber Tufts",
-                        "purpose": "Removes large trash particles, seed coat fragments, and motes.",
+                        "step": "Bale Opening",
+                        "machine_name": "Automatic Bale Opener UNIfloc A 12",
+                        "input": "Compressed Fiber Bales (Assortment Laydown)",
+                        "output": "Uniform Microtufts",
+                        "purpose": "Opens compressed fiber bales gently into uniform microtufts at up to 2,400 kg/h output for optimal downstream cleaning and blending.",
                         "image": None
                     },
                     {
-                        "step": "Blending",
-                        "machine_name": "Multi-Mixer / Blender (Placeholder)",
-                        "input": "Partially Cleaned Fiber Tufts",
-                        "output": "Homogeneously Blended Tufts",
-                        "purpose": "Mixes fibers from different bales to ensure consistent yarn quality.",
+                        "step": "Pre-Cleaning",
+                        "machine_name": "Pre-Cleaner UNIclean B 15 / UNIclean B 12",
+                        "input": "Opened Fiber Microtufts",
+                        "output": "Pre-Cleaned & Dedusted Fiber Tufts",
+                        "purpose": "Performs gentle, uninhibited pre-cleaning and dedusting immediately after bale opening without nipping fibers, at high production rates.",
+                        "image": None
+                    },
+                    {
+                        "step": "Homogeneous Mixing",
+                        "machine_name": "Mixer UNImix B 72 / B 76",
+                        "input": "Pre-Cleaned Fiber Stream",
+                        "output": "Homogeneously Mixed Fiber Tufts",
+                        "purpose": "Uses a 3-point mixing process in 6 or 8 chambers to ensure long-term homogeneity and rapid adjustment to different raw materials.",
+                        "image": None
+                    },
+                    {
+                        "step": "Precision Multi-Component Blending",
+                        "machine_name": "Precision Blender UNIblend A 81",
+                        "input": "2 to 4 Different Fiber Components (Cotton, Synthetics, Dyed, Recycled)",
+                        "output": "Accurately Proportioned Multi-Component Fiber Blend",
+                        "purpose": "Delivers high-precision multi-component blending (deviation under 1%) for melange, blended, and recycled knitting yarns.",
                         "image": None
                     },
                     {
                         "step": "Fine Opening & Cleaning",
-                        "machine_name": "Fine Cleaner (Placeholder)",
-                        "input": "Homogeneously Blended Tufts",
-                        "output": "Fine Cleaned Micro-Tufts",
-                        "purpose": "Opens fibers down to very small flocks and removes fine dust/trash.",
+                        "machine_name": "UNIstore A 79 & Fine Cleaner UNIclean B 17",
+                        "input": "Blended Fiber Tufts",
+                        "output": "Finely Opened & Cleaned Micro-Flocks",
+                        "purpose": "Combines storage/feeding (UNIstore A 79) with intensive fine trash and seed-coat fragment removal (UNIclean B 17) for natural fibers with high trash content.",
+                        "image": None
+                    },
+                    {
+                        "step": "Small-Assortment Mixing & Waste Recovery",
+                        "machine_name": "Mixing Opener B 33 / Mixing Bale Opener B 34 & Waste Opener B 25",
+                        "input": "Small Fiber Lots or Roving/Sliver Waste",
+                        "output": "Opened & Reusable Fiber Flocks",
+                        "purpose": "Provides compact mixing and opening for small assortments (B 33 / B 34) and economical recovery of spinning waste (B 25).",
+                        "image": None
+                    },
+                    {
+                        "step": "Material Transport, Protection & Control",
+                        "machine_name": "Condensers A 21 / A 22, Solid Matter Extractor A 49 & UNIcontrol",
+                        "input": "Pneumatically Conveyed Fiber Stream",
+                        "output": "Protected, Constant Chute-Feed Batt Flow",
+                        "purpose": "Separates transport air (A 21/A 22), extracts heavy foreign parts/sparks for system safety (A 49), and maintains continuous material flow from blowroom to cards (UNIcontrol).",
+                        "image": None
+                    },
+                    {
+                        "step": "High-Output Carding",
+                        "machine_name": "Card C 81",
+                        "input": "Blowroom Chute-Fed Fiber Batt",
+                        "output": "Carded Sliver (up to 40% Higher Output)",
+                        "purpose": "Market-leading energy-efficient card featuring the largest active carding area, intelligent Carding Gap Control (CGC), and Integrated Grinding System (IGS) for maximum sliver quality and fiber yield.",
+                        "image": None
+                    },
+                    {
+                        "step": "Economical High-Production Carding",
+                        "machine_name": "Card C 77",
+                        "input": "Blowroom Chute-Fed Fiber Batt",
+                        "output": "Uniform Carded Sliver",
+                        "purpose": "Delivers high production of outstanding carded sliver quality with energy savings of up to 30% across cotton, man-made fibers, and blends.",
                         "image": None
                     }
                 ]
             },
-            "Carding & Drafting": {
-                "description": "Individualizing fibers, removing neps/short fibers, and attenuating slivers for parallel alignment.",
+            "Spinning preparation machines": {
+                "description": "Draw frames, combers, and roving frames delivering superior sliver evenness, optimal short-fiber removal, and uniform roving bobbins.",
                 "flowchart_steps": [
-                    "Chute Feeding",
-                    "Carding",
-                    "Breaker Drawframe",
-                    "Lap Former / Combing (Optional for Combed Yarn)",
-                    "Finisher Drawframe"
+                    "Breaker Drawing (Draw Frame SB-D 55 / SB-D 27)",
+                    "Combing Preparation / Lap Forming (OMEGAlap E 40 / E 36)",
+                    "Combing (Comber E 90 / Comber E 86)",
+                    "Finisher Autoleveler Drawing (RSB-D 55 / RSB-D 27 / RSB-Module 55)",
+                    "Roving Preparation (Roving Frame F 40 / F 20 / F 37)"
                 ],
                 "machineries": [
                     {
-                        "step": "Carding",
-                        "machine_name": "Revolving Flat Carding Machine (Placeholder)",
-                        "input": "Blowroom Fiber Flocks (Batt)",
-                        "output": "Carded Sliver",
-                        "purpose": "Disentangles fiber tufts into individual fibers, removes neps and short fibers.",
+                        "step": "Single-Head Breaker & Autoleveler Drawing",
+                        "machine_name": "Autoleveler Draw Frame RSB-D 55 & Draw Frame SB-D 55",
+                        "input": "6–8 Carded or Combed Slivers",
+                        "output": "Highly Parallelized, Autoleveled Drawn Sliver",
+                        "purpose": "Single-head draw frames offering scanning precision, superior sliver evenness, and delivery speeds up to 1,200 m/min (RSB-D 55 with autoleveling; SB-D 55 without autoleveling).",
                         "image": None
                     },
                     {
-                        "step": "Breaker Drawframe",
-                        "machine_name": "Breaker Drawing Frame (Placeholder)",
-                        "input": "6-8 Carded Slivers",
-                        "output": "Drawn Sliver",
-                        "purpose": "Doubles and drafts slivers to improve evenness and fiber parallelization.",
+                        "step": "Double-Head Breaker & Autoleveler Drawing",
+                        "machine_name": "Autoleveler Draw Frame RSB-D 27 & Draw Frame SB-D 27",
+                        "input": "Carded or Combed Sliver Cans (Dual Delivery)",
+                        "output": "2 Parallel Drawn Slivers in Cans",
+                        "purpose": "Space-saving double-head draw frames delivering up to 1,200 m/min per delivery with precise autoleveling (RSB-D 27) or non-autoleveled pre-drawing (SB-D 27).",
                         "image": None
                     },
                     {
-                        "step": "Finisher Drawframe",
-                        "machine_name": "Auto-Leveler Finisher Drawframe (Placeholder)",
-                        "input": "6-8 Breaker / Combed Slivers",
-                        "output": "Uniform Finisher Sliver",
-                        "purpose": "Ensures strict linear density uniformity via auto-leveling before roving.",
+                        "step": "Direct Card-to-Draw-Frame Coupling",
+                        "machine_name": "Autoleveler Draw Frame Module RSB-Module 55",
+                        "input": "Direct Sliver Feed from Card C 81",
+                        "output": "Autoleveled Drawn Sliver",
+                        "purpose": "Directly connects the card with an autoleveler draw frame module to reduce draw frame passages and boost mill efficiency.",
+                        "image": None
+                    },
+                    {
+                        "step": "Combing Preparation (Lap Winding)",
+                        "machine_name": "Combing Preparation OMEGAlap E 40 / OMEGAlap E 36",
+                        "input": "24–28 Pre-Drawn Slivers",
+                        "output": "Uniformly Wound Comber Laps",
+                        "purpose": "Uses belt-winding technology to produce uniform laps at up to 800 kg/h output (OMEGAlap E 40) with fast lap change and low energy consumption.",
+                        "image": None
+                    },
+                    {
+                        "step": "High-Productivity Combing",
+                        "machine_name": "Comber E 90",
+                        "input": "8 Comber Laps from OMEGAlap",
+                        "output": "Combed Sliver (Short Fibers & Neps Removed)",
+                        "purpose": "Achieves up to 600 nips/min and over 100 kg/h combed sliver output with raw material savings and consistent quality for fine knitwear yarns.",
+                        "image": None
+                    },
+                    {
+                        "step": "Automated Precision Combing",
+                        "machine_name": "Comber E 86",
+                        "input": "8 Comber Laps from OMEGAlap",
+                        "output": "Premium Combed Sliver",
+                        "purpose": "Features the largest active combing area (90° combing cylinder) and full ROBOlap automation for top efficiency and flexible noil extraction.",
+                        "image": None
+                    },
+                    {
+                        "step": "Automated / Semi-Automated Roving",
+                        "machine_name": "Roving Frame F 40 / F 20",
+                        "input": "Finisher Drawn Sliver Cans",
+                        "output": "Twisted Roving Bobbins",
+                        "purpose": "Attenuates drawn sliver and winds uniform roving bobbins with up to 252 spindles and fast doffing (fully automated on F 40; semi-automated on F 20).",
+                        "image": None
+                    },
+                    {
+                        "step": "Compact Fully Automatic Roving",
+                        "machine_name": "Fully Automatic Roving Frame F 37",
+                        "input": "Finisher Drawn Sliver Cans",
+                        "output": "Roving Bobbins Ready for Ring/Compact Spinning",
+                        "purpose": "Combines up to 220 spindles, compact design, electronic drafting, and automated doffing for consistent roving quality.",
                         "image": None
                     }
                 ]
             },
-            "Roving & Ring Spinning": {
-                "description": "Drafting drawn sliver into roving, spinning it into final yarn, and winding onto cones.",
+            "Ring spinning machines": {
+                "description": "Efficient ring-spinning machines delivering high-quality Com4ring yarns with flexible configurations, high spindle speeds, and energy-saving design.",
                 "flowchart_steps": [
-                    "Simplex / Roving",
-                    "Ring Spinning",
-                    "Autoconer / Winding",
-                    "Yarn Conditioning & Packing"
+                    "Roving Bobbin Creeling / SERVOtrail Transport",
+                    "3-Roller Double-Apron Drafting",
+                    "Ring & Traveler Twist Insertion (Short-Balloon / High-Speed Package)",
+                    "Individual Spindle Monitoring (ISM) & ROBOspin Piecing",
+                    "Automatic Cop Doffing & Link to Winding"
                 ],
                 "machineries": [
                     {
-                        "step": "Simplex / Roving",
-                        "machine_name": "Speed Frame / Simplex Machine (Placeholder)",
-                        "input": "Finisher Drawn Sliver",
-                        "output": "Roving Bobbin",
-                        "purpose": "Reduces sliver thickness and inserts slight protective twist for ring frame feeding.",
+                        "step": "Ring Yarn Spinning",
+                        "machine_name": "Ring Spinning Machine G 38",
+                        "input": "Roving Bobbins (plus Optional Core Filament / Fancy Slub Feed)",
+                        "output": "Com4ring Spun Yarn Cops (Standard, Compact, or Core/Twin/Fancy Yarns)",
+                        "purpose": "Flagship ring spinning machine with up to 1,824 spindles, electronic drafting drive, integrated ISM premium monitoring, automatic doffing, and energy-efficient design.",
                         "image": None
                     },
                     {
-                        "step": "Ring Spinning",
-                        "machine_name": "Ring Spinning Frame (Placeholder)",
-                        "input": "Roving Bobbin",
-                        "output": "Ring Cop (Spun Yarn)",
-                        "purpose": "Drafts roving to final count and inserts twist to form strong yarn.",
+                        "step": "High-Speed Spindle & Ring Configuration",
+                        "machine_name": "High-Speed Package & Short-Balloon Setting",
+                        "input": "Drafted Fiber Strand on Ring Frame",
+                        "output": "High-Speed Spun Ring Cops with Reduced Ends-Down",
+                        "purpose": "Coordinates optimized spindles, Ri-Q-Tubes, and rings/travelers with short-balloon geometry to boost productivity by up to 12% and reduce yarn breaks by 10%.",
                         "image": None
                     },
                     {
-                        "step": "Autoconer / Winding",
-                        "machine_name": "Automatic Cone Winder (Placeholder)",
-                        "input": "Ring Cops",
-                        "output": "Waxed Knitting Yarn Cone",
-                        "purpose": "Clears yarn faults, splices ends, applies paraffin wax, and winds onto large cones.",
+                        "step": "Automated Piecing & Roving Transport",
+                        "machine_name": "ROBOspin Piecing Robot & SERVOtrail Roving Transport",
+                        "input": "Roving Bobbins & Ring Spinning Spindles",
+                        "output": "Continuously Pieced & Automatically Creel-Fed Ring Spindles",
+                        "purpose": "Automates bobbin transport from roving frame to ring frame and autonomously repairs yarn breaks 24/7 to reduce operator workload.",
+                        "image": None
+                    }
+                ]
+            },
+            "Compact-spinning machines": {
+                "description": "Versatile compact-spinning machines and compacting devices enabling premium Com4compact yarn production with full fiber integration, low hairiness, and high tenacity.",
+                "flowchart_steps": [
+                    "Roving Feeding",
+                    "Main Drafting Zone Attenuation",
+                    "Pneumatic / Mechanical Fiber Compacting Zone",
+                    "Twist Insertion & Cop Winding",
+                    "Automated Cop Doffing"
+                ],
+                "machineries": [
+                    {
+                        "step": "High-Speed Compact Yarn Spinning",
+                        "machine_name": "Compact-Spinning Machine K 48",
+                        "input": "Carded or Combed Roving Bobbins",
+                        "output": "Low-Hairiness, High-Strength Com4compact Yarn Cops",
+                        "purpose": "Dedicated compact-spinning machine (up to 1,824 spindles) with perforated drum compacting, 18% lower energy consumption, ISM monitoring, and fast 90-second doffing.",
+                        "image": None
+                    },
+                    {
+                        "step": "Universal Magnetic/Pneumatic Compacting",
+                        "machine_name": "Compacting Solution COMPACT4",
+                        "input": "Drafted Fiber Strand on Ring Spinning Frame",
+                        "output": "Uniformly Compacted Yarn Strand",
+                        "purpose": "Universal four-roller compacting unit mounted on ring spinning machines to deliver consistently high compact yarn quality across carded, combed, and recycled fibers.",
+                        "image": None
+                    },
+                    {
+                        "step": "3D Apron Suction Compacting",
+                        "machine_name": "Compacting Device COMPACTapron",
+                        "input": "Drafted Fiber Strand",
+                        "output": "Fine & Extra-Fine Compact Yarn (up to Ne 100+)",
+                        "purpose": "Uses a 3D suction guide beneath a mesh apron to transport fibers directly to the nip line with 22% lower energy use and minimal maintenance.",
+                        "image": None
+                    },
+                    {
+                        "step": "Mechanical Double-Compacting",
+                        "machine_name": "Mechanical Compacting System COMPACTeasy",
+                        "input": "Drafted Fiber Strand",
+                        "output": "Compacted Ring Yarn with Zero Additional Suction Energy",
+                        "purpose": "Y-shaped mechanical dual-channel condenser that reduces hairiness by ~10% and increases yarn strength by ~5% without requiring external vacuum power.",
+                        "image": None
+                    },
+                    {
+                        "step": "Removable Drum Compacting",
+                        "machine_name": "Compacting Device COMPACTdrum",
+                        "input": "Drafted Fiber Strand",
+                        "output": "Compact Yarn or Conventional Ring Yarn (Quick Switch)",
+                        "purpose": "Flexible perforated-drum compacting device allowing rapid switching between standard ring yarn and compact yarn on the same machine.",
+                        "image": None
+                    }
+                ]
+            },
+            "Rotor spinning machines": {
+                "description": "Automatic and semi-automatic open-end rotor spinning machines combining high productivity, flexibility, and automation to spin sliver directly into cross-wound packages.",
+                "flowchart_steps": [
+                    "Drawn Sliver Can Feeding",
+                    "Fiber Opening by Opening Roller & Trash Extraction",
+                    "Fiber Transport & Condensation in High-Speed Rotor Groove",
+                    "Open-End Twist Insertion & Yarn Clearer Q 30 Inspection",
+                    "Direct Cross-Wound Package Winding & Automatic Doffing"
+                ],
+                "machineries": [
+                    {
+                        "step": "Fully Automated Open-End Rotor Spinning",
+                        "machine_name": "Rotor Spinning Machine R 70",
+                        "input": "Drawn Sliver Cans (Virgin, Blended, or Recycled Fibers)",
+                        "output": "Waxed Cross-Wound Com4rotor Yarn Cones / Packages",
+                        "purpose": "Fully automated rotor spinning machine with autonomous spinboxes, individual drive technology, Yarn Clearer Q 30, and continuous VARIOlot change—delivering 7% higher output and minimal energy use.",
+                        "image": None
+                    },
+                    {
+                        "step": "Semi-Automated Open-End Rotor Spinning",
+                        "machine_name": "Semi-Automated Rotor Spinning Machine R 37 (with Optional ROBOdoff)",
+                        "input": "Drawn Sliver Cans (Cotton, Polyester, or High-Recycled Content)",
+                        "output": "Cross-Wound Rotor Yarn Packages",
+                        "purpose": "Economical double-sided rotor spinning machine (up to 600 rotors) with AMIspin electronic piecing, independent machine sides, and optional ROBOdoff automatic package doffing.",
+                        "image": None
+                    }
+                ]
+            },
+            "Air-jet spinning machines": {
+                "description": "Future-ready air-jet spinning technology using compressed air vortex twist to spin drawn sliver directly into pill-resistant Com4jet yarn packages at up to 600 m/min.",
+                "flowchart_steps": [
+                    "Drawn Sliver Can Feeding",
+                    "4-Roller High-Speed Drafting",
+                    "Compressed-Air Vortex Twist Insertion (Air-Jet Spinbox)",
+                    "Optical Yarn Clearing (Yarn Clearer Q 30)",
+                    "Precision Package Winding & Robot Doffing"
+                ],
+                "machineries": [
+                    {
+                        "step": "High-Speed Air-Jet Spinning",
+                        "machine_name": "Air-Jet Spinning Machine J 70",
+                        "input": "Finisher Drawn Sliver Cans (Viscose, Modal, Polyester, Carded/Combed Cotton & Blends)",
+                        "output": "Cross-Wound Com4jet Yarn Packages (Ready for Knitting)",
+                        "purpose": "Double-sided air-jet spinning machine with 200 autonomous spinning units, 4 multi-tasking robots, Yarn Clearer Q 30, and delivery speeds up to 600 m/min—producing low-pilling, smooth knitting yarns.",
+                        "image": None
+                    }
+                ]
+            },
+            "Winding machines": {
+                "description": "Advanced automatic package winders and SSM yarn processing solutions for clearing yarn faults, splicing, waxing, and building precision knitting cones.",
+                "flowchart_steps": [
+                    "Ring / Compact Cop Feeding (Magazine or Direct Link)",
+                    "Electronic Yarn Fault Clearing",
+                    "Pneumatic / Thermo / Injection Splicing (Smartsplicer)",
+                    "Paraffin Waxing for Knitting",
+                    "PreciFX / Drum Package Winding & Automatic Cone Doffing"
+                ],
+                "machineries": [
+                    {
+                        "step": "Automatic Cone Winding & Clearing",
+                        "machine_name": "Winding Machine Autoconer X6",
+                        "input": "Ring or Compact Spun Yarn Cops",
+                        "output": "Cleared, Spliced & Waxed Knitting Cones / Dye Packages",
+                        "purpose": "Flagship automatic package winder (up to 96 winding units) featuring Smartjet upper-yarn search, Smartsplicer / Thermosplicer technology, RFID bobbin tracking, and PreciFX digital package build.",
+                        "image": None
+                    },
+                    {
+                        "step": "Precision Assembly Winding",
+                        "machine_name": "SSM Precision Assembly Winder (NEO-BD)",
+                        "input": "2 or More Single-Ply Yarn Cones",
+                        "output": "Doubled Multi-Ply Assembly Wound Packages",
+                        "purpose": "Doubles multiple yarn ends with balanced tension, high package density, and knot-free lengths ready for two-for-one twisting.",
+                        "image": None
+                    },
+                    {
+                        "step": "Specialty Filament & Yarn Processing",
+                        "machine_name": "SSM Yarn Processing & Precision Winding Solutions",
+                        "input": "Staple-Fiber or Continuous Filament Yarns",
+                        "output": "Air-Covered, Drawn, or Soft-Wound Dye Packages",
+                        "purpose": "Covers air-covering, filament drawing, and precision dye-package winding for elastic and technical knitwear applications.",
+                        "image": None
+                    }
+                ]
+            },
+            "Texturing machines": {
+                "description": "SSM false-twist and air texturing machines that impart bulk, crimp, elasticity, and a natural spun-fiber look and hand-feel to continuous filament yarns.",
+                "flowchart_steps": [
+                    "Continuous Filament Supply Creeling (POY / FDY)",
+                    "Sequential or Simultaneous Drawing & Thermal Heating Zone",
+                    "Texturing (Air-Jet Interlacing for ATY or False-Twist Spindle for DTY)",
+                    "Thermal Stabilization / Heat-Setting",
+                    "Precision Package Take-Up Winding"
+                ],
+                "machineries": [
+                    {
+                        "step": "Air Texturing (ATY Production)",
+                        "machine_name": "SSM Air Texturing Machines",
+                        "input": "Flat Continuous Filament Yarns (Polyester, Polyamide, Polypropylene)",
+                        "output": "Air-Textured Yarn (ATY) Packages with Spun-Fiber Hand-Feel",
+                        "purpose": "Uses compressed air jets to entangle and loop continuous filaments, giving synthetic yarns a natural cotton-like appearance and soft touch for activewear and knit fabrics.",
+                        "image": None
+                    },
+                    {
+                        "step": "False-Twist Texturing (DTY Production)",
+                        "machine_name": "SSM False-Twist Texturing Machines",
+                        "input": "Partially Oriented Yarn (POY) / Flat Filament Packages",
+                        "output": "Draw-Textured Yarn (DTY) Cones with High Stretch & Bulk",
+                        "purpose": "Applies simultaneous drawing, heating, and false-twist crimping along optimized yarn paths to produce elastic, bulky DTY yarns for circular and seamless knitting.",
                         "image": None
                     }
                 ]

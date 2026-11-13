@@ -4,10 +4,15 @@ A Streamlit web application presenting the process flowcharts, machine layouts, 
 
 ## Pages & Sub-Sections
 
-1. **Spinning**
-   - Blowroom
-   - Carding & Drafting
-   - Roving & Ring Spinning
+1. **Spinning** *(Rieter Spinning Systems)*
+   - Fiber preparation machines
+   - Spinning preparation machines
+   - Ring spinning machines
+   - Compact-spinning machines
+   - Rotor spinning machines
+   - Air-jet spinning machines
+   - Winding machines
+   - Texturing machines
 2. **Knitting**
    - Circular Knitting
    - Flat Knitting
