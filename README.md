@@ -47,3 +47,4 @@ streamlit run app.py
 2. Go to [share.streamlit.io](https://share.streamlit.io/) and sign in with GitHub.
 3. Click **Create app** → select your repository, branch (`main`), and set **Main file path** to `app.py`.
 4. Click **Deploy**.
+

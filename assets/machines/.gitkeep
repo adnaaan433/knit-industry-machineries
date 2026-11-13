@@ -1,1 +1,2 @@
 Place machine images in this folder and reference them in `data.py` under the `"image"` key (e.g., `"assets/machines/overlock.jpg"`).
+
