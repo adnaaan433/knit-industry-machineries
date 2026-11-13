@@ -22,9 +22,11 @@ A Streamlit web application presenting the process flowcharts, machine layouts, 
    - Fiber Dyeing
 4. **Garments**
    - Cutting
-   - Sewing *(Overall Department Flowchart + Product-Wise Machine Layout Flowchart & 18 Industrial Sewing Machine Specifications)*
+   - Sewing *(Overall Department Flowchart + Product-Wise Machine Layout Flowchart & 25 Industrial Sewing Machine Specifications)*
    - Printing
    - Embroidery
+   - Washing
+   - Finishing
 
 ## Project Structure
 

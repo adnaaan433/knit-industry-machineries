@@ -571,7 +571,7 @@ WORKFLOW_DATA = {
         "description": "Conversion of finished knitted fabrics into ready-made knit garments including embellishments.",
         "subsections": {
             "Cutting": {
-                "description": "Receiving graded patterns and cutting ratios, marker making, fabric checking, tensionless spreading, precision cutting, numbering, bundling, and dispatching cut panels.",
+                "description": "Receiving graded patterns and cutting ratios, marker making, fabric checking, tensionless relaxation & spreading, precision cutting, numbering, bundling, and dispatching cut panels.",
                 "flowchart_steps": [
                     "Pattern Received from Pattern Department",
                     "Cutting Ratio Received from Merchandiser",
@@ -589,26 +589,98 @@ WORKFLOW_DATA = {
                 "machineries": [
                     {
                         "step": "Marker Making",
-                        "machine_name": "CAD System & Wide-Format Marker Plotter (Placeholder)",
+                        "machine_name": "CAD Marker Plotter",
                         "input": "Digital Garment Pattern & Size Ratio",
-                        "output": "Printed Paper Marker / Digital Cut File",
-                        "purpose": "Optimizes pattern placement to maximize fabric utilization (marker efficiency).",
+                        "output": "Full-Scale Printed Paper Marker / Digital Cut File",
+                        "purpose": "Plots full-width cutting markers with high pattern efficiency for manual or automated cutting lines (Est. Market Price: $3,000 – $12,000).",
+                        "image": None
+                    },
+                    {
+                        "step": "Fabric Checking (Shade Variation Check)",
+                        "machine_name": "Fabric Inspection Machine & Color Cabinet",
+                        "input": "Finished Knit Fabric Rolls from Store",
+                        "output": "4-Point Inspected & Shade-Segregated Fabric Rolls",
+                        "purpose": "Checks fabric defects, width, GSM, and roll-to-roll shade continuity under standard illuminants before spreading (Est. Market Price: $2,500 – $10,000).",
+                        "image": None
+                    },
+                    {
+                        "step": "Fabric Relaxation",
+                        "machine_name": "Fabrics Relaxation Machine",
+                        "input": "Tightly Wound Knitted Fabric Rolls",
+                        "output": "Tension-Relieved, Dimensionally Relaxed Knit Fabric",
+                        "purpose": "Relieves winding tension in elastic and tubular/open-width knit fabrics via steam and vibration transport prior to spreading.",
                         "image": None
                     },
                     {
                         "step": "Fabric Spreading (Lay Height & Ply Tension)",
-                        "machine_name": "Automatic Tensionless Knit Fabric Spreader (Placeholder)",
-                        "input": "Finished Knit Fabric Rolls",
-                        "output": "Multi-Ply Fabric Lay",
-                        "purpose": "Spreads knit fabric plies evenly without tension to prevent dimensional distortion.",
+                        "machine_name": "Automatic Fabric Spreader & End Cutter Machine",
+                        "input": "Relaxed Knit Fabric Rolls",
+                        "output": "Tensionless Multi-Ply Fabric Lay",
+                        "purpose": "Micro-computer controlled spreading machine with roll loader and automatic end-catcher/cutter that lays plies at exact height and zero tension (Est. Market Price: $8,000 – $40,000).",
                         "image": None
                     },
                     {
-                        "step": "Cutting the Fabric",
-                        "machine_name": "Straight Knife / Automatic CNC Cutter & Band Knife (Placeholder)",
-                        "input": "Multi-Ply Fabric Lay",
-                        "output": "Cut Garment Panels",
-                        "purpose": "Cuts fabric lays accurately into front, back, sleeve, and neck-rib components.",
+                        "step": "Cutting the Fabric (Bulk Lay Cutting)",
+                        "machine_name": "Straight Knife Cutting Machine",
+                        "input": "Multi-Ply Fabric Lay with Top Marker",
+                        "output": "Sectioned Garment Panel Blocks & Cut Components",
+                        "purpose": "Most widely used vertical reciprocating blade cutter with automatic belt sharpener for cutting medium-to-high multi-ply knit lays (Est. Market Price: $250 – $900).",
+                        "image": None
+                    },
+                    {
+                        "step": "Cutting the Fabric (Precision Small Parts)",
+                        "machine_name": "Band Knife Cutting Machine",
+                        "input": "Rough-Cut Fabric Blocks (Collars, Plackets, Neck Ribs, Pockets)",
+                        "output": "Finely Trimmed High-Precision Garment Components",
+                        "purpose": "Stationary endless rotating blade with inverter-controlled motor and air-cushion table for contour cutting small critical parts.",
+                        "image": None
+                    },
+                    {
+                        "step": "Cutting the Fabric (Low-Ply & Straight Cuts)",
+                        "machine_name": "Round Knife Cutting Machine",
+                        "input": "Low-Ply Fabric Lays or Sample Plies",
+                        "output": "Straight-Cut Fabric Sections",
+                        "purpose": "Circular rotary blade cutter suited for low lays, gentle curves, and small cutting operations (Est. Market Price: $120 – $350).",
+                        "image": None
+                    },
+                    {
+                        "step": "Cutting the Fabric (Automated CNC Cutting)",
+                        "machine_name": "Computer-Controlled Knife Cutting Machine (Auto Cutter)",
+                        "input": "Vacuum-Compressed Multi-Ply Fabric Lay + CAD Cut File",
+                        "output": "Automatically Cut Garment Panels",
+                        "purpose": "CNC-driven reciprocating knife head with vacuum hold-down table that cuts directly from digital CAD markers at high speed and accuracy.",
+                        "image": None
+                    },
+                    {
+                        "step": "Cutting the Fabric (Fixed-Shape Components)",
+                        "machine_name": "Die-Cutting Machine",
+                        "input": "Small Fabric Stacks (Collar Tips, Appliques, Pocket Flaps)",
+                        "output": "Identical Die-Stamped Fabric Pieces",
+                        "purpose": "Hydraulic or pneumatic press using shaped steel rule dies to stamp out small parts with identical dimensions.",
+                        "image": None
+                    },
+                    {
+                        "step": "Panel Marking & Alignment Notching",
+                        "machine_name": "Notcher Cutting Machine & Cloth Drill Machine",
+                        "input": "Cut Garment Panel Bundles",
+                        "output": "Notched & Drill-Marked Garment Panels",
+                        "purpose": "Cuts thermal/cold V- or U-notches along panel edges and drills internal dart/pocket position marks across all plies for accurate sewing alignment.",
+                        "image": None
+                    },
+                    {
+                        "step": "Non-Contact Specialty Cutting",
+                        "machine_name": "Laser Beam, Water Jet & Plasma Torch Cutting Machines",
+                        "input": "Synthetic Knit Fabrics, Appliques, or Technical Panels",
+                        "output": "Clean-Sealed Precision Cut Components",
+                        "purpose": "Non-contact high-energy cutting systems (focused CO2 laser beam, high-pressure water jet, or ionized gas plasma jet) for intricate patterns and sealed synthetic edges.",
+                        "image": None
+                    },
+                    {
+                        "step": "Neck Binding, Piping & Trim Preparation",
+                        "machine_name": "Ribbon Cutting, Slitting & Bias Making / Rolling Machines",
+                        "input": "Tubular Knit Fabric, Satin Ribbon, Velcro, or Elastic Tape",
+                        "output": "Cut Neck Tapes, Bias Piping Rolls & Rounded Velcro Strips",
+                        "purpose": "Slits tubular knit fabric into continuous bias/cross-grain binding rolls and cuts ribbons, belt loops, or Velcro tapes to exact lengths.",
                         "image": None
                     }
                 ]
@@ -849,40 +921,96 @@ WORKFLOW_DATA = {
                         "machine_name": "Eyelet Hole Chain Stitch Sewing Machine",
                         "input": "Jacket / Heavy Outerwear Placket + Chainstitch Thread",
                         "output": "Keyhole / Eyelet Buttonhole",
-                        "purpose": "Raised-bed specialty machine used to create reinforced eyelet buttonholes on jackets and blazers.",
+                        "purpose": "Raised-bed direct-drive specialty machine with auto thread trimmer used to create reinforced eyelet buttonholes on jackets and blazers.",
+                        "image": None
+                    },
+                    {
+                        "step": "Stress-Point Reinforcement Stitching",
+                        "machine_name": "Computer Controlled Direct Drive High-Speed Bartacking Machine",
+                        "input": "Assembled Garment Stress Points (Pocket Corners, Side Slits, Placket Base, Belt Loops)",
+                        "output": "Bartack-Reinforced Garment Stress Points",
+                        "purpose": "High-density cyclic lockstitch machine used to reinforce areas prone to high stress or tearing (Est. Market Price: $1,800 – $4,500).",
+                        "image": None
+                    },
+                    {
+                        "step": "Programmable Pattern & Box-X Stitching",
+                        "machine_name": "Micro-Processor Controlled Automatic Pattern Sewing Machine",
+                        "input": "Garment Panels + Labels / Badges / Webbing Straps",
+                        "output": "Program-Stitched Box-X, Label, or Decorative Pattern Assembly",
+                        "purpose": "Computerized X-Y clamp sewing machine for automatic pattern stitching, label attachment, and decorative tacking (Est. Market Price: $4,000 – $15,000).",
+                        "image": None
+                    },
+                    {
+                        "step": "Automated Welt Pocket Slitting & Sewing",
+                        "machine_name": "Computer Controlled Automatic Pocket Welting Machine (APW)",
+                        "input": "Garment Front / Trouser Panel + Welt Strip & Pocket Bag",
+                        "output": "Precision-Slit & Stitched Single/Double Welt Pocket",
+                        "purpose": "Automatically sews, slits, and corner-knifes single or double welt pockets on polo shirts, jackets, and trousers (Est. Market Price: $8,000 – $25,000).",
+                        "image": None
+                    },
+                    {
+                        "step": "Waistband & Cuff Elastic Insertion",
+                        "machine_name": "Elastic Attaching & Metering Machine",
+                        "input": "Knit Jogger / Undergarment Waistband + Elastic Band + Sewing Thread",
+                        "output": "Uniformly Tensioned Elastic-Attached Waistband",
+                        "purpose": "Overlock or coverstitch machine equipped with a metered roller tension device for attaching elastic bands smoothly (Est. Market Price: $700 – $2,500).",
+                        "image": None
+                    },
+                    {
+                        "step": "Continuous Zipper Insertion & Stopper Attachment",
+                        "machine_name": "Endless Zipper Attaching & Auto Stopper Machine",
+                        "input": "Hoodie / Jacket Front Panels + Continuous Zipper Chain & Stoppers",
+                        "output": "Zipper-Attached Garment Front with Secured Top/Bottom Stoppers",
+                        "purpose": "Attaches continuous zipper tapes evenly onto knit hoodies, track jackets, and trousers, paired with an automatic zipper stopper unit.",
+                        "image": None
+                    },
+                    {
+                        "step": "Collar & Cuff Turning, Blocking & Creasing",
+                        "machine_name": "Collar Point Trimming, Turning & Cuff Blocking Machines",
+                        "input": "Run-Stitched Collar, Cuff & Pocket Components",
+                        "output": "Trimmed, Turned & Steam-Creased Collars, Cuffs & Pockets",
+                        "purpose": "Includes collar contour trimming, pneumatic collar point turning/blocking, cuff blocking, cool-head collar creasing press, and pneumatic steam pocket creasing machines.",
                         "image": None
                     },
                     {
                         "step": "Interlining Bonding",
-                        "machine_name": "Fusing Machine",
-                        "input": "Knit/Woven Collar, Placket, or Neck Panels + Fusible Interlining",
+                        "machine_name": "Fusing Machine with Digital Controlled Heating Zones",
+                        "input": "Knit/Woven Collar, Placket, Cuff, or Neck Panels + Fusible Interlining",
                         "output": "Thermally Bonded (Fused) Garment Components",
-                        "purpose": "2-roller pressure and heat fusing machine suitable for bonding fusible interlining onto knitted and woven fabric panels.",
+                        "purpose": "Continuous roller pressure and multi-zone heat fusing machine for bonding fusible interlining onto plackets, collars, and cuffs (Est. Market Price: $2,000 – $12,000).",
                         "image": None
                     }
                 ]
             },
             "Printing": {
-                "description": "Application of surface graphics and all-over or placement prints onto cut panels or fabrics.",
+                "description": "Application of surface graphics, heat transfers, and all-over or placement prints onto cut panels or finished knit garments.",
                 "flowchart_steps": [
                     "Artwork Separation & Screen Exposure",
-                    "Panel Pallet Loading",
-                    "Paste Application / Digital Printing",
+                    "Panel Pallet Loading / Positioning",
+                    "Paste Application / Heat Transfer Pressing",
                     "Flash Curing (Intermediate)",
                     "Conveyor Heat Curing"
                 ],
                 "machineries": [
                     {
-                        "step": "Paste Application (Chest / Placement Print)",
-                        "machine_name": "Automatic Octopus / Oval Screen Printing Machine (Placeholder)",
+                        "step": "Paste Application (Chest / Placement & All-Over Print)",
+                        "machine_name": "Fabrics Printing Machine (Automatic Octopus / Oval Screen Printing Machine)",
                         "input": "Cut Garment Panels + Printing Paste & Screens",
                         "output": "Wet Printed Garment Panels",
-                        "purpose": "Applies multi-color plastisol, rubber, pigment, or discharge prints with high registration.",
+                        "purpose": "Applies multi-color plastisol, rubber, pigment, high-density, or discharge prints onto cut knit panels with precision registration.",
+                        "image": None
+                    },
+                    {
+                        "step": "Heat Transfer Graphic & Care Label Application",
+                        "machine_name": "Heat Transfer Press Machine",
+                        "input": "Cut Panel or Garment + Heat Transfer Film / Tagless Label",
+                        "output": "Heat-Transferred Graphic or Tagless Neck Label on Garment",
+                        "purpose": "Pneumatic or manual flat-bed thermal press that transfers plastisol/sublimation graphics, vinyl logos, and tagless neck labels under controlled heat and pressure (Est. Market Price: $300 – $3,000).",
                         "image": None
                     },
                     {
                         "step": "Conveyor Heat Curing",
-                        "machine_name": "Gas / IR Conveyor Curing Dryer (Placeholder)",
+                        "machine_name": "Gas / IR Conveyor Curing Dryer",
                         "input": "Wet Printed Garment Panels",
                         "output": "Cured Wash-Fast Printed Panels",
                         "purpose": "Polymerizes and fixes printing ink/paste onto the knit fabric at controlled temperature.",
@@ -901,10 +1029,168 @@ WORKFLOW_DATA = {
                 "machineries": [
                     {
                         "step": "Multi-Head Embroidery Stitching",
-                        "machine_name": "Computerized Multi-Head Embroidery Machine (Placeholder)",
+                        "machine_name": "Computerized Multi-Head Embroidery Machine",
                         "input": "Hooped Garment Panels + Stabilizer Backing + Embroidery Threads",
                         "output": "Embroidered Garment Panels",
-                        "purpose": "Stitches multi-color logos, appliques, or sequin motifs simultaneously across multiple heads.",
+                        "purpose": "Stitches multi-color logos, appliques, 3D puff, or sequin motifs simultaneously across multiple heads (Est. Market Price: $5,000 – $50,000+).",
+                        "image": None
+                    }
+                ]
+            },
+            "Washing": {
+                "description": "Garment wet and dry washing processes—including enzyme wash, silicon softening, acid/pigment wash, laser/dry distressing, hydro-extraction, drying, and effluent treatment.",
+                "flowchart_steps": [
+                    "Chemical Recipe Preparation (Chemical Mixture Machine)",
+                    "Dry Whiskering, Grinding, Sand Blasting & Laser Designing",
+                    "P.P. Spray & Crinkle Steam Chamber Treatment",
+                    "Wet Garment Washing (Front-Loading / Side-Loading Washer)",
+                    "Centrifugal Dewatering (Hydro Extractor Machine)",
+                    "Tumble Drying (Steam / Gas Dryer)",
+                    "Thermal Fixation (Industrial Oven / Curing Machine)",
+                    "Wastewater Treatment (ETP — Effluent Treatment Plant)"
+                ],
+                "machineries": [
+                    {
+                        "step": "Wet Garment Washing & Softening",
+                        "machine_name": "Front-Loading & Side-Loading Garment Washing Machines",
+                        "input": "Sewn Garments + Water + Enzymes / Softeners / Washing Chemicals",
+                        "output": "Washed & Softened Wet Garments",
+                        "purpose": "Industrial rotary drum washing machines (front-loading for sample/medium batches and high-capacity side-loading for bulk) used for garment wash, enzyme bio-polishing, pigment wash, and silicon softening.",
+                        "image": None
+                    },
+                    {
+                        "step": "Chemical Preparation",
+                        "machine_name": "Chemical Mixture Machine",
+                        "input": "Raw Washing Auxiliaries, Enzymes, Dyes & Water",
+                        "output": "Homogeneously Dissolved Chemical Liquor",
+                        "purpose": "Agitated mixing tank that prepares uniform chemical, enzyme, and softener solutions prior to dosing into washing machines.",
+                        "image": None
+                    },
+                    {
+                        "step": "Centrifugal Dewatering",
+                        "machine_name": "Hydro Extractor Machine",
+                        "input": "Soaked Washed Garments",
+                        "output": "Dewatered Damp Garments",
+                        "purpose": "High-speed perforated stainless-steel centrifuge that extracts excess water from washed garments before tumble drying.",
+                        "image": None
+                    },
+                    {
+                        "step": "Garment Tumble Drying",
+                        "machine_name": "Dryer Machine (Steam Dryer & Gas Dryer)",
+                        "input": "Hydro-Extracted Damp Garments",
+                        "output": "Dried & Bulked Knit/Woven Garments",
+                        "purpose": "Rotating tumble dryers heated by steam coils or gas burners to dry garments evenly while developing a soft, lofty hand-feel.",
+                        "image": None
+                    },
+                    {
+                        "step": "Dry Distressing & Surface Fading",
+                        "machine_name": "Laser Machine, Grinding Machine & Sand Blasting Chamber / Gun",
+                        "input": "Unwashed or Pre-Washed Garments (Denim, Heavy Fleece, Pigment-Dyed Knits)",
+                        "output": "Whiskered, Edge-Ground, or Vintage-Faded Garments",
+                        "purpose": "Performs localized surface abrasion, hem/edge grinding, sandblasting, or eco-friendly computer-guided laser whiskering and vintage patterning.",
+                        "image": None
+                    },
+                    {
+                        "step": "Localized Fading & 3D Crinkle Effects",
+                        "machine_name": "P.P. Spray Gun Booth & Steam Chamber for Crinkle",
+                        "input": "Garments Mounted on Inflatable Dummies / Clips + Potassium Permanganate (P.P.) / Steam",
+                        "output": "Locally Bleached / 3D Crinkle-Set Garments",
+                        "purpose": "Applies localized P.P. spray mist in an exhaust booth for highlight fading and sets permanent 3D creases inside a pressurized steam crinkle chamber.",
+                        "image": None
+                    },
+                    {
+                        "step": "Resin Baking & Thermal Curing",
+                        "machine_name": "Industrial Oven (Gas / Electric) & Curing Machine",
+                        "input": "Resin-Applied, 3D-Whiskered, or Pigment-Treated Garments",
+                        "output": "Thermally Cured & Wrinkle-Set Garments",
+                        "purpose": "Maintains precise curing temperatures to polymerize resins, fix pigment/tint washes, and lock in 3D crinkle effects.",
+                        "image": None
+                    },
+                    {
+                        "step": "Batch Tagging & Wastewater Treatment",
+                        "machine_name": "Tagging Machine & ETP (Effluent Treatment Plant)",
+                        "input": "Garment Batches & Washing Plant Effluent Water",
+                        "output": "Tagged Garment Lots & Treated Compliant Discharge Water",
+                        "purpose": "Attaches identification/scrunching tags prior to washing (Tagging Machine) and treats chemical/dye wastewater biologically and physico-chemically (ETP) to meet environmental compliance.",
+                        "image": None
+                    }
+                ]
+            },
+            "Finishing": {
+                "description": "Post-sewing and post-washing garment operations including loose thread trimming, spot removal, metal fastener attachment, steam pressing, quality/safety inspection, folding, tagging, and cartooning.",
+                "flowchart_steps": [
+                    "Loose Thread Trimming & Thread Sucking",
+                    "Stain Spotting & Spot Removing",
+                    "Snap / Shank Button Attaching & Pull Testing",
+                    "Steam Ironing / Vacuum Table Pressing",
+                    "Measurement, Moisture & Light-Box Shade Inspection",
+                    "Price Tagging, Folding & Polybagging",
+                    "Needle Detection (Metal Contamination Scan)",
+                    "Barcode Scanning, Carton Packing, Weighing & Strapping"
+                ],
+                "machineries": [
+                    {
+                        "step": "Loose Thread Cleaning & Suction",
+                        "machine_name": "Auto Thread Trimming Machine & Thread-Sucking Machine",
+                        "input": "Sewn Garments with Loose Thread Ends & Lint",
+                        "output": "Clean, Thread-Free Garments",
+                        "purpose": "Trims unclipped thread tails closely using vacuum-assisted cutter heads ($500 – $2,000) and sucks away loose lint/threads inside a high-suction chamber.",
+                        "image": None
+                    },
+                    {
+                        "step": "Stain & Oil Spot Removal",
+                        "machine_name": "Spot Removing Machine with Vacuum, Light & Spotting Spray Gun",
+                        "input": "Garments with Oil, Grease, or Handling Marks + Spotting Solvent/Air/Steam",
+                        "output": "Stain-Free Clean Garments",
+                        "purpose": "Uses a high-pressure spotting spray gun, air/steam gun, and illuminated vacuum buck to dissolve and extract oil or dirt spots without leaving rings.",
+                        "image": None
+                    },
+                    {
+                        "step": "Metal Fastener Attachment & Safety Testing",
+                        "machine_name": "Snap Attach Full Pneumatic Machine, Shank Button Machine & Pull Testing Machine",
+                        "input": "Garment Plackets + Metal Snaps / Prong Buttons / Shank Buttons",
+                        "output": "Fastener-Attached & Pull-Tested Garments",
+                        "purpose": "Clinches snap buttons ($300 – $1,500) and shank buttons pneumatically, and verifies fastener attachment strength on a Pull Testing Machine to meet child-safety standards.",
+                        "image": None
+                    },
+                    {
+                        "step": "Steam Generation, Ironing & Garment Pressing",
+                        "machine_name": "Steam Boiler, Industrial Steam Iron & Vacuum Ironing Table",
+                        "input": "Clean Garments + Pressurized Steam",
+                        "output": "Pressed, Wrinkle-Free & Dimensionally Set Garments",
+                        "purpose": "Steam boiler ($2,000 – $25,000) supplies dry steam to industrial steam irons ($80 – $300) fitted with Teflon iron shoes/plates over suction vacuum tables ($250 – $1,200) and garment toppers.",
+                        "image": None
+                    },
+                    {
+                        "step": "Quality, Shade & Moisture Verification",
+                        "machine_name": "Light Checking Box, Moisture Meter, Digital Hygrometer & Weight Scale",
+                        "input": "Pressed Finished Garments",
+                        "output": "Shade-Verified & Moisture-Approved Garments",
+                        "purpose": "Verifies garment color consistency under multi-source light boxes, checks fabric moisture content before polybagging to prevent mold, and monitors room humidity and garment GSM/weight.",
+                        "image": None
+                    },
+                    {
+                        "step": "Folding, Tagging & Polybag Sealing",
+                        "machine_name": "Stand-Up Shirt Folding Table, Tag Gun & Plastic Stapler Machine",
+                        "input": "Inspected Garments + Hangtags, Size Stickers & Polybags",
+                        "output": "Neatly Folded, Hang-Tagged & Polybagged Garments",
+                        "purpose": "Assists uniform garment folding (stand-up/pneumatic folding table) and attaches hangtags and packaging fasteners via tag guns and plastic stapler machines.",
+                        "image": None
+                    },
+                    {
+                        "step": "Broken Needle & Metal Contamination Inspection",
+                        "machine_name": "Conveyor Needle Detector Machine",
+                        "input": "Polybagged Finished Garments",
+                        "output": "Metal-Free Safety Certified Garments",
+                        "purpose": "Passes every finished garment through a magnetic induction tunnel to detect any ferrous metal or broken needle fragments (Est. Market Price: $1,500 – $6,000).",
+                        "image": None
+                    },
+                    {
+                        "step": "Carton Packing, Strapping & Dispatch",
+                        "machine_name": "Barcode Scanning Machine, Carton Staple Machine, P.P. Carton Belting Machine & Forklift",
+                        "input": "Needle-Detected Garment Polybags + Corrugated Export Cartons",
+                        "output": "Barcode-Verified, Sealed, Strapped & Palletized Export Cartons",
+                        "purpose": "Scans assortment barcodes, seals corrugated boxes with carton staplers, straps cartons with P.P. belting machines, and moves palletized shipments via forklift.",
                         "image": None
                     }
                 ]
