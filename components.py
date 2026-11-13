@@ -610,10 +610,11 @@ def render_department_page(dept_name: str, dept_data: dict, dept_index: int = 1)
                 product_names = list(product_flowcharts.keys())
                 col_sel, col_filter = st.columns([2.2, 2.8])
                 with col_sel:
-                    selected_product = st.selectbox(
-                        "Select Product Style for Machine Line Layout",
+                    selected_product = st.radio(
+                        "Product Category",
                         options=product_names,
                         index=0,
+                        horizontal=True,
                         key=f"prod_select_{sub_name}",
                     )
                 prod_info = product_flowcharts[selected_product]

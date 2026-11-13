@@ -380,8 +380,8 @@ WORKFLOW_DATA = {
                     "Final Quality Check (For Each Garment)"
                 ],
                 "product_flowcharts": {
-                    "Basic T-Shirt": {
-                        "summary": "Standard 13-operation sewing line layout for a basic knitted crew-neck T-shirt (26 total machines · Target: 200 pcs/hr · Requires only 3 machine types: Overlock, Plain Machine, and Flatlock).",
+                    "T-Shirt": {
+                        "summary": "Standard 13-operation sewing line layout for a knitted crew-neck T-shirt (26 total machines · Target: 200 pcs/hr · Uses 3 machine types: Overlock [O/L: 9], Plain Machine [P/M: 13], and Flatlock [F/L: 4]).",
                         "required_machines": [
                             "4-Thread Overlock Chain Stitch Sewing Machine",
                             "Single Needle Lock Stitch Sewing Machine (Plain Machine)",
@@ -393,14 +393,64 @@ WORKFLOW_DATA = {
                             {"operation": "Rib Tack", "machine": "Plain Machine", "qty": 1, "target": "200 pcs/hr"},
                             {"operation": "Main Label Join", "machine": "Plain Machine", "qty": 1, "target": "200 pcs/hr"},
                             {"operation": "Neck Tape Join", "machine": "Plain Machine", "qty": 3, "target": "200 pcs/hr"},
-                            {"operation": "Neck Top Stitch", "machine": "Plain Machine", "qty": 3, "target": "200 pcs/hr"},
+                            {"operation": "Neck Top Sin / Topstitch", "machine": "Plain Machine", "qty": 3, "target": "200 pcs/hr"},
                             {"operation": "Sleeve Hem", "machine": "Flatlock Machine", "qty": 2, "target": "200 pcs/hr"},
                             {"operation": "Sleeve Join", "machine": "Overlock Machine", "qty": 2, "target": "200 pcs/hr"},
                             {"operation": "Care Label Join", "machine": "Plain Machine", "qty": 1, "target": "200 pcs/hr"},
                             {"operation": "Side Seam", "machine": "Overlock Machine", "qty": 3, "target": "200 pcs/hr"},
                             {"operation": "Sleeve Tack", "machine": "Plain Machine", "qty": 2, "target": "200 pcs/hr"},
-                            {"operation": "Sleeve Churi / Soap Tack", "machine": "Plain Machine", "qty": 2, "target": "200 pcs/hr"},
+                            {"operation": "Sleeve Soap Tack", "machine": "Plain Machine", "qty": 2, "target": "200 pcs/hr"},
                             {"operation": "Body Hem", "machine": "Flatlock Machine", "qty": 2, "target": "200 pcs/hr"}
+                        ]
+                    },
+                    "Polo Shirt": {
+                        "summary": "Complete 37-operation sewing line layout for a knitted Polo Shirt (37 total machines + 5 Table stations · 40 Operators, 26 Helpers · Uses Plain Machine [P/M: 18], Auto Plain Machine [P/M Auto: 3], Overlock [O/L: 8], Flatlock [F/L: 6], Buttonhole [B/H: 1], and Button Attaching [B/A: 1]).",
+                        "required_machines": [
+                            "Single Needle Lock Stitch Sewing Machine (Plain Machine)",
+                            "Auto Plain Machine (Computerized Single Needle Lock Stitch with Auto-Trimmer)",
+                            "4-Thread Overlock Chain Stitch Sewing Machine",
+                            "Top and Bottom Coverage Chain Stitch Machine (Flat Lock)",
+                            "Button Hole Lock Stitch Sewing Machine",
+                            "Button Attaching Sewing Machine"
+                        ],
+                        "steps": [
+                            {"operation": "Placket Rolling", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Moon (Back Neck Half-Moon)", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Moon Topstitch", "machine": "Flatlock Machine (F/L)", "qty": 1},
+                            {"operation": "Neck Closing", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Placket Matching with Front", "machine": "Table (Manual Matching)", "qty": None},
+                            {"operation": "Placket Attaching with Front", "machine": "Auto Plain Machine (P/M Auto)", "qty": 1},
+                            {"operation": "Placket Topstitch", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Placket Tuck", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Matching (Front & Back Part)", "machine": "Table (Manual Matching)", "qty": None},
+                            {"operation": "Shoulder Joint with Shoulder Tape", "machine": "Overlock Machine (O/L)", "qty": 1},
+                            {"operation": "Shoulder Topstitch", "machine": "Flatlock Machine (F/L)", "qty": 1},
+                            {"operation": "Collar Cut Without Thread", "machine": "Overlock Machine (O/L)", "qty": 1},
+                            {"operation": "Collar Tuck with Placket", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Collar Joint with the Body", "machine": "Overlock Machine (O/L)", "qty": 1},
+                            {"operation": "Neck Piping", "machine": "Flatlock Machine (F/L)", "qty": 1},
+                            {"operation": "Main Label Joint", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Sleeve Hem (Cuff) Joint with Sleeve", "machine": "Overlock Machine (O/L)", "qty": 1},
+                            {"operation": "Collar Back Topstitch", "machine": "Flatlock Machine (F/L)", "qty": 2},
+                            {"operation": "Cutting & Matching", "machine": "Table (Manual Station)", "qty": None},
+                            {"operation": "Sleeve Joint", "machine": "Overlock Machine (O/L)", "qty": 2},
+                            {"operation": "Placket Kasa Mara (Slit Tack)", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Placket 1/16 Topstitch", "machine": "Auto Plain Machine (P/M Auto)", "qty": 1},
+                            {"operation": "Placket Tuck", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Care Label Joint", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Placket Box Topstitch", "machine": "Plain Machine (P/M)", "qty": 2},
+                            {"operation": "Inspection All Back Process", "machine": "Table (In-Line Inspection)", "qty": None},
+                            {"operation": "Bottom Hem", "machine": "Flatlock Machine (F/L)", "qty": 1},
+                            {"operation": "Side Seam", "machine": "Overlock Machine (O/L)", "qty": 2},
+                            {"operation": "Sideband Twill Tape (Side Vent)", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Sideband Tuck", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Sideband Topstitch", "machine": "Plain Machine (P/M)", "qty": 2},
+                            {"operation": "Sleeve Inside Tuck", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Sleeve Outside Topstitch", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Sideband Tuck (Reinforcement)", "machine": "Plain Machine (P/M)", "qty": 1},
+                            {"operation": "Buttonhole", "machine": "Buttonhole Machine (B/H)", "qty": 1},
+                            {"operation": "Button Positioning (Marking)", "machine": "Table (Manual Marking)", "qty": None},
+                            {"operation": "Button Attaching", "machine": "Button Attaching Machine (B/A)", "qty": 1}
                         ]
                     }
                 },
@@ -414,11 +464,19 @@ WORKFLOW_DATA = {
                         "image": None
                     },
                     {
-                        "step": "Collar, Front & General Seaming (Stitch Class 301)",
+                        "step": "Collar, Placket, Label & General Seaming (Stitch Class 301)",
                         "machine_name": "Single Needle Lock Stitch Sewing Machine (Plain Machine)",
-                        "input": "Cut Garment Panels (Collar, Front, Placket) + Needle & Bobbin Thread",
-                        "output": "Lockstitched Collar & Front Garment Assembly",
-                        "purpose": "Flat-bed machine with drop-feed mechanism (1 needle, 4000–5000 RPM) used for sewing shirts, suits, collars, and garment fronts.",
+                        "input": "Cut Garment Panels (Collar, Placket, Neck Tape, Sideband, Labels) + Needle & Bobbin Thread",
+                        "output": "Lockstitched Placket, Collar Tuck, Neck Tape & Topstitched Assembly",
+                        "purpose": "Flat-bed machine with drop-feed mechanism (1 needle, 4000–5000 RPM) used extensively in T-shirt (rib tack, label join, neck tape join, neck topstitch, sleeve tack) and Polo shirt (placket rolling, moon, neck closing, sideband twill tape & box topstitch) sewing lines.",
+                        "image": None
+                    },
+                    {
+                        "step": "Precision Placket Attaching & 1/16 Topstitching (Stitch Class 301)",
+                        "machine_name": "Auto Plain Machine (Computerized Single Needle Lock Stitch with Auto-Trimmer)",
+                        "input": "Polo Front Panel + Prepared Placket + Needle & Bobbin Thread",
+                        "output": "Precision-Attached & 1/16\" Topstitched Polo Placket with Auto-Trimmed Threads",
+                        "purpose": "Direct-drive computerized single-needle lockstitch machine with automatic thread trimmer, auto back-tack, and programmable stitch count; used in Polo shirt lines for placket attaching with front and placket 1/16 topstitching.",
                         "image": None
                     },
                     {
