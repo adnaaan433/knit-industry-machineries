@@ -27,6 +27,10 @@ A Streamlit web application presenting the process flowcharts, machine layouts, 
    - Embroidery
    - Washing
    - Finishing
+5. **Laboratory**
+   - Laboratory Testing *(Placeholder — to be populated)*
+6. **Utility**
+   - Utility Machineries *(Fire-Tube Boiler, Generator, Compressor, HVAC & Filtration Systems)*
 
 ## Project Structure
 

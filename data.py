@@ -1196,5 +1196,100 @@ WORKFLOW_DATA = {
                 ]
             }
         }
+    },
+    "Laboratory": {
+        "icon": "🔬",
+        "description": "Physical, chemical, and colorfastness quality testing of fibers, yarns, greige/finished knit fabrics, and garments (To be populated).",
+        "subsections": {
+            "Laboratory Testing": {
+                "description": "Quality assurance and textile testing instruments (Currently empty — to be populated later).",
+                "flowchart_steps": [],
+                "machineries": []
+            }
+        }
+    },
+    "Utility": {
+        "icon": "⚡",
+        "description": "Essential plant engineering and utility infrastructure supplying steam, electrical power, compressed air, treated water, and climate control across the textile & garment factory.",
+        "subsections": {
+            "Utility Machineries": {
+                "description": "Boilers, power generators, air compressors, filtration systems, and HVAC/air-conditioning equipment required for continuous factory operation.",
+                "flowchart_steps": [
+                    "Water Filtration & Boiler Feed Treatment",
+                    "Gas Feeding & Burner Combustion",
+                    "Steam Generation & Pressure Control (Fire-Tube Boiler)",
+                    "Electrical Power Generation & Exhaust Management (Generator)",
+                    "Compressed Air Generation & Moisture Management (Compressor)",
+                    "Factory Air Conditioning & Air Duct Distribution",
+                    "Thermal Process Drying Support (Gas Dryer)"
+                ],
+                "machineries": [
+                    {
+                        "step": "Process Steam Generation",
+                        "machine_name": "Fire-Tube Boiler",
+                        "input": "Treated Soft Feed Water + Natural Gas / Fuel + Combustion Air",
+                        "output": "High-Pressure Saturated Process Steam",
+                        "purpose": "Generates continuous steam for dyeing, stentering, compacting, garment washing, and steam ironing stations across the factory (Est. Market Price: $2,000 – $25,000+).",
+                        "image": None
+                    },
+                    {
+                        "step": "Boiler Combustion & Thermal Heating",
+                        "machine_name": "Boiler Gas Burner, Gas Feeding System & Heating Arrangement",
+                        "input": "Regulated Natural Gas Supply + Forced Draft Air",
+                        "output": "Controlled High-Efficiency Furnace Flame & Flue Heat",
+                        "purpose": "Mixes fuel gas and air in precise ratios via the gas feeding system and burner to heat the fire-tube boiler safely and efficiently.",
+                        "image": None
+                    },
+                    {
+                        "step": "Feed Water & Boiler Filtration",
+                        "machine_name": "Water Filter & Boiler Filter",
+                        "input": "Raw Plant Water & Boiler Circulation Water",
+                        "output": "Filtered, Scale-Free Softened Feed Water",
+                        "purpose": "Removes suspended solids, hardness minerals, and impurities to prevent boiler tube scaling and corrosion.",
+                        "image": None
+                    },
+                    {
+                        "step": "Boiler Safety, Pressure & TDS Control",
+                        "machine_name": "Boiler Pressure Control System & Boiler Blowdown System",
+                        "input": "Pressurized Boiler Steam & High-TDS Boiler Drum Water",
+                        "output": "Regulated Operating Steam Pressure & Purged Sludge/TDS",
+                        "purpose": "Modulates burner firing to maintain safe steam pressure and periodically purges dissolved solids/sludge from the boiler via blowdown valves.",
+                        "image": None
+                    },
+                    {
+                        "step": "Primary & Backup Electrical Power",
+                        "machine_name": "Industrial Power Generator (Gas / Diesel) & Exhaust System",
+                        "input": "Natural Gas or Diesel Fuel + Intake Air",
+                        "output": "Uninterrupted 3-Phase Factory Electrical Power & Treated Flue Exhaust",
+                        "purpose": "Supplies continuous or standby electrical power to spinning, knitting, dyeing, and sewing lines while safely routing combustion gases through the exhaust system and filters.",
+                        "image": None
+                    },
+                    {
+                        "step": "Pneumatic Power Supply",
+                        "machine_name": "Industrial Air Compressor & Compressor Moisture Management System",
+                        "input": "Filtered Ambient Air + Electrical Drive Power",
+                        "output": "Clean, Dry Pressurized Pneumatic Air",
+                        "purpose": "Supplies compressed air for pneumatic sewing actuators, auto-trimmers, screen printers, and air-jet/splicing nozzles while removing condensed water via air dryers and moisture traps.",
+                        "image": None
+                    },
+                    {
+                        "step": "Plant Climate, Humidity & Ventilation Control",
+                        "machine_name": "Air Conditioner, Air Duct & Conditioning of Air System",
+                        "input": "Ambient Factory Air + Chilled Water / Refrigerant",
+                        "output": "Temperature- & Humidity-Controlled Production Floor Air",
+                        "purpose": "Maintains controlled temperature, relative humidity, and dust-free air circulation across spinning, knitting, and garment floors via overhead air ducts.",
+                        "image": None
+                    },
+                    {
+                        "step": "Thermal Drying Utility",
+                        "machine_name": "Dryer Machine (Gas)",
+                        "input": "Damp Washed/Processed Textile Goods + Gas Burner Heat",
+                        "output": "Thermally Dried Garments / Fabrics",
+                        "purpose": "Gas-fired rotary drying unit integrated with plant gas feeding and exhaust ducting for high-efficiency moisture evaporation.",
+                        "image": None
+                    }
+                ]
+            }
+        }
     }
 }
