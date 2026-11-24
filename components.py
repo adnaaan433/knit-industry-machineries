@@ -271,6 +271,39 @@ def inject_custom_css():
             color: var(--ink-slate);
         }
 
+        /* Functional Parts Strip */
+        .parts-box {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: 1px solid var(--border-warm);
+            border-radius: 6px;
+            background: var(--bg-cream);
+        }
+        .parts-label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-teal);
+            margin-bottom: 6px;
+        }
+        .parts-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .part-chip {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.74rem;
+            font-weight: 500;
+            color: var(--ink-slate);
+            background: var(--bg-sand);
+            border: 1px solid var(--border-warm);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
         /* Technical Figure Placeholder */
         .figure-frame {
             display: flex;
@@ -508,6 +541,17 @@ def render_machineries(machineries: list[dict], subsection_name: str, section_nu
         output_mat = item.get("output", "TBD")
         purpose = item.get("purpose", "")
         image_path = item.get("image")
+        functional_parts = item.get("functional_parts", [])
+
+        parts_html = ""
+        if functional_parts:
+            chips = "".join(f'<span class="part-chip">{p}</span>' for p in functional_parts)
+            parts_html = (
+                f'<div class="parts-box">'
+                f'<div class="parts-label">Functional Parts ({len(functional_parts)})</div>'
+                f'<div class="parts-chips">{chips}</div>'
+                f'</div>'
+            )
 
         with st.container(border=True):
             col_fig, col_spec = st.columns([1.15, 3.85], gap="medium")
@@ -550,6 +594,7 @@ def render_machineries(machineries: list[dict], subsection_name: str, section_nu
                             <div class="io-val">{output_mat}</div>
                         </div>
                     </div>
+                    {parts_html}
                     """,
                     unsafe_allow_html=True,
                 )

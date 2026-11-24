@@ -588,11 +588,20 @@ WORKFLOW_DATA = {
                 ],
                 "machineries": [
                     {
-                        "step": "Marker Making",
+                        "step": "Marker Making / CAD",
                         "machine_name": "CAD Marker Plotter",
                         "input": "Digital Garment Pattern & Size Ratio",
                         "output": "Full-Scale Printed Paper Marker / Digital Cut File",
                         "purpose": "Plots full-width cutting markers with high pattern efficiency for manual or automated cutting lines (Est. Market Price: $3,000 – $12,000).",
+                        "functional_parts": [
+                            "Digitizer",
+                            "CAD Workstation",
+                            "Plotter",
+                            "Plotter Head",
+                            "Pen Holder",
+                            "Scanner",
+                            "Cutting Head"
+                        ],
                         "image": None
                     },
                     {
@@ -601,6 +610,13 @@ WORKFLOW_DATA = {
                         "input": "Finished Knit Fabric Rolls from Store",
                         "output": "4-Point Inspected & Shade-Segregated Fabric Rolls",
                         "purpose": "Checks fabric defects, width, GSM, and roll-to-roll shade continuity under standard illuminants before spreading (Est. Market Price: $2,500 – $10,000).",
+                        "functional_parts": [
+                            "Illuminated Inspection Screen",
+                            "Fabric Roll Unwinder & Rewinder",
+                            "Length / Yardage Counter",
+                            "Edge Alignment Sensor",
+                            "Standard Multi-Light Source Lamps (D65, TL84, UV)"
+                        ],
                         "image": None
                     },
                     {
@@ -609,6 +625,13 @@ WORKFLOW_DATA = {
                         "input": "Tightly Wound Knitted Fabric Rolls",
                         "output": "Tension-Relieved, Dimensionally Relaxed Knit Fabric",
                         "purpose": "Relieves winding tension in elastic and tubular/open-width knit fabrics via steam and vibration transport prior to spreading.",
+                        "functional_parts": [
+                            "Feed Cradle Rollers",
+                            "Steam Conditioning Box",
+                            "Vibrating Relaxation Conveyor Belt",
+                            "Overfeed Roller",
+                            "Plaiting / Roll Rewinding Unit"
+                        ],
                         "image": None
                     },
                     {
@@ -617,6 +640,16 @@ WORKFLOW_DATA = {
                         "input": "Relaxed Knit Fabric Rolls",
                         "output": "Tensionless Multi-Ply Fabric Lay",
                         "purpose": "Micro-computer controlled spreading machine with roll loader and automatic end-catcher/cutter that lays plies at exact height and zero tension (Est. Market Price: $8,000 – $40,000).",
+                        "functional_parts": [
+                            "Spreading Carriage",
+                            "Fabric Roll Holder",
+                            "Spreading Roller",
+                            "Edge Control Sensor",
+                            "Tension Control Unit",
+                            "Fabric Clamp",
+                            "Drive Motor",
+                            "End Cutter Head"
+                        ],
                         "image": None
                     },
                     {
@@ -625,6 +658,14 @@ WORKFLOW_DATA = {
                         "input": "Multi-Ply Fabric Lay with Top Marker",
                         "output": "Sectioned Garment Panel Blocks & Cut Components",
                         "purpose": "Most widely used vertical reciprocating blade cutter with automatic belt sharpener for cutting medium-to-high multi-ply knit lays (Est. Market Price: $250 – $900).",
+                        "functional_parts": [
+                            "Cutting Blade",
+                            "Blade Sharpener",
+                            "Presser Foot",
+                            "Blade Guide",
+                            "Motor",
+                            "Base Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -633,6 +674,15 @@ WORKFLOW_DATA = {
                         "input": "Rough-Cut Fabric Blocks (Collars, Plackets, Neck Ribs, Pockets)",
                         "output": "Finely Trimmed High-Precision Garment Components",
                         "purpose": "Stationary endless rotating blade with inverter-controlled motor and air-cushion table for contour cutting small critical parts.",
+                        "functional_parts": [
+                            "Cutting Blade",
+                            "Blade Sharpener",
+                            "Presser Foot",
+                            "Blade Guide",
+                            "Motor",
+                            "Base Plate",
+                            "Air-Cushion Table & Pulley Wheels"
+                        ],
                         "image": None
                     },
                     {
@@ -641,6 +691,14 @@ WORKFLOW_DATA = {
                         "input": "Low-Ply Fabric Lays or Sample Plies",
                         "output": "Straight-Cut Fabric Sections",
                         "purpose": "Circular rotary blade cutter suited for low lays, gentle curves, and small cutting operations (Est. Market Price: $120 – $350).",
+                        "functional_parts": [
+                            "Rotary Circular Cutting Blade",
+                            "Blade Sharpener Stone",
+                            "Presser Foot / Blade Guard",
+                            "Blade Guide",
+                            "Motor",
+                            "Base Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -649,6 +707,14 @@ WORKFLOW_DATA = {
                         "input": "Vacuum-Compressed Multi-Ply Fabric Lay + CAD Cut File",
                         "output": "Automatically Cut Garment Panels",
                         "purpose": "CNC-driven reciprocating knife head with vacuum hold-down table that cuts directly from digital CAD markers at high speed and accuracy.",
+                        "functional_parts": [
+                            "Cutting Head",
+                            "Cutting Blade",
+                            "Blade Sharpener",
+                            "Vacuum Bristle Conveyor Bed",
+                            "Gantry Drive Motor",
+                            "CAD Controller Console"
+                        ],
                         "image": None
                     },
                     {
@@ -657,6 +723,13 @@ WORKFLOW_DATA = {
                         "input": "Small Fabric Stacks (Collar Tips, Appliques, Pocket Flaps)",
                         "output": "Identical Die-Stamped Fabric Pieces",
                         "purpose": "Hydraulic or pneumatic press using shaped steel rule dies to stamp out small parts with identical dimensions.",
+                        "functional_parts": [
+                            "Cutting Blade (Forged Steel Die)",
+                            "Hydraulic / Pneumatic Press Head",
+                            "Cutting Pad / Base Plate",
+                            "Material Clamp",
+                            "Motor & Pressure Cylinder"
+                        ],
                         "image": None
                     },
                     {
@@ -665,6 +738,13 @@ WORKFLOW_DATA = {
                         "input": "Cut Garment Panel Bundles",
                         "output": "Notched & Drill-Marked Garment Panels",
                         "purpose": "Cuts thermal/cold V- or U-notches along panel edges and drills internal dart/pocket position marks across all plies for accurate sewing alignment.",
+                        "functional_parts": [
+                            "Heated / Cold Notching Blade",
+                            "Vertical Drill Needle / Awl",
+                            "Depth Guide & Presser Foot",
+                            "Thermostat / Heater Unit",
+                            "Motor & Base Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -673,6 +753,13 @@ WORKFLOW_DATA = {
                         "input": "Synthetic Knit Fabrics, Appliques, or Technical Panels",
                         "output": "Clean-Sealed Precision Cut Components",
                         "purpose": "Non-contact high-energy cutting systems (focused CO2 laser beam, high-pressure water jet, or ionized gas plasma jet) for intricate patterns and sealed synthetic edges.",
+                        "functional_parts": [
+                            "Laser Focusing Head / Water-Jet Nozzle / Plasma Torch",
+                            "X-Y CNC Gantry Rail",
+                            "Honeycomb / Slat Cutting Bed",
+                            "Exhaust & Fume Extraction Unit",
+                            "CAD Motion Controller"
+                        ],
                         "image": None
                     },
                     {
@@ -681,6 +768,29 @@ WORKFLOW_DATA = {
                         "input": "Tubular Knit Fabric, Satin Ribbon, Velcro, or Elastic Tape",
                         "output": "Cut Neck Tapes, Bias Piping Rolls & Rounded Velcro Strips",
                         "purpose": "Slits tubular knit fabric into continuous bias/cross-grain binding rolls and cuts ribbons, belt loops, or Velcro tapes to exact lengths.",
+                        "functional_parts": [
+                            "Rotary Slitting Cutting Blade",
+                            "Tubular Fabric Mandrel / Frame",
+                            "Bias Winding Roller",
+                            "Length Feed Roller",
+                            "Hot / Cold Cutoff Knife"
+                        ],
+                        "image": None
+                    },
+                    {
+                        "step": "Numbering, Sorting and Bundling",
+                        "machine_name": "Numbering and Bundling Machine / Station",
+                        "input": "Cut Garment Panel Plies",
+                        "output": "Sequentially Numbered & Bundled Garment Components with Job Tags",
+                        "purpose": "Stamps ply shade/sequence numbers onto every cut panel to prevent shade mixing and secures sorted panel bundles with tickets for the sewing floor.",
+                        "functional_parts": [
+                            "Numbering Head",
+                            "Numbering Wheel",
+                            "Ink Roller",
+                            "Numbering Stamp",
+                            "Bundle Clamp",
+                            "Tag Holder"
+                        ],
                         "image": None
                     }
                 ]
@@ -786,6 +896,14 @@ WORKFLOW_DATA = {
                         "input": "Folded Hem Edge (Blazer / Trouser Panels) + 1 Needle Thread",
                         "output": "Invisibly Hemmed Garment Edge",
                         "purpose": "Cylinder-bed machine using 1 curved needle (Stitch Class 101, 3000+ RPM) for invisible hemming on blazers and trousers.",
+                        "functional_parts": [
+                            "Curved Needle & Needle Bar",
+                            "Looper / Spreader",
+                            "Ridge Former (Fabric Plunger)",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Thread Tension Disc"
+                        ],
                         "image": None
                     },
                     {
@@ -794,6 +912,17 @@ WORKFLOW_DATA = {
                         "input": "Cut Garment Panels (Collar, Placket, Neck Tape, Sideband, Labels) + Needle & Bobbin Thread",
                         "output": "Lockstitched Placket, Collar Tuck, Neck Tape & Topstitched Assembly",
                         "purpose": "Flat-bed machine with drop-feed mechanism (1 needle, 4000–5000 RPM) used extensively in T-shirt (rib tack, label join, neck tape join, neck topstitch, sleeve tack) and Polo shirt (placket rolling, moon, neck closing, sideband twill tape & box topstitch) sewing lines.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Bobbin Case",
+                            "Hook",
+                            "Take-up Lever",
+                            "Thread Tension Disc",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -802,6 +931,18 @@ WORKFLOW_DATA = {
                         "input": "Polo Front Panel + Prepared Placket + Needle & Bobbin Thread",
                         "output": "Precision-Attached & 1/16\" Topstitched Polo Placket with Auto-Trimmed Threads",
                         "purpose": "Direct-drive computerized single-needle lockstitch machine with automatic thread trimmer, auto back-tack, and programmable stitch count; used in Polo shirt lines for placket attaching with front and placket 1/16 topstitching.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Presser Foot & Auto Foot Lifter",
+                            "Feed Dog",
+                            "Bobbin Case",
+                            "Rotary Hook",
+                            "Take-up Lever",
+                            "Thread Tension Disc",
+                            "Throat Plate",
+                            "Auto Thread Trimmer Knife"
+                        ],
                         "image": None
                     },
                     {
@@ -810,6 +951,18 @@ WORKFLOW_DATA = {
                         "input": "Cut Knit Garment Panels + 4 Threads (2 Needle, 2 Looper)",
                         "output": "Joined Knit Panels with Superimposed Overedge Seam",
                         "purpose": "Flat-bed overlock machine (2 needles, 2 loopers, Stitch Class 514, 3000+ RPM) used primarily for knit garments joining.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Upper Looper",
+                            "Lower Looper",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Upper Knife",
+                            "Lower Knife",
+                            "Differential Feed",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -818,6 +971,16 @@ WORKFLOW_DATA = {
                         "input": "Knit Body / T-Shirt Hem Panels + 4 Threads (3 Needle, 1 Looper)",
                         "output": "Flat-Hemmed T-Shirt Bottom & Topstitched Knit Seam",
                         "purpose": "Cylinder-bed Flat Lock machine (2–3 needles, 1 looper, 3000+ RPM, edge neatening seam) for T-shirt bottom hems and knit topstitching.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needles",
+                            "Looper",
+                            "Spreader",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Differential Feed",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -826,6 +989,16 @@ WORKFLOW_DATA = {
                         "input": "Garment Side Seam / Back Yoke / Sleeve Panels + 4 Threads",
                         "output": "Lap-Seamed Tubular Sleeve & Side Seam Assembly",
                         "purpose": "Arm-bed machine with lap folder (2 needles, Stitch Class 401, 3000+ RPM, lapped seam) for side seams, back yoke joins, sleeve joins, and flat tubular operations.",
+                        "functional_parts": [
+                            "Cylinder / Feed-off-the-Arm Bed",
+                            "Needle Bar & Needles",
+                            "Chainstitch Looper",
+                            "Lap Seam Folder Attachment",
+                            "Presser Foot & Rear Puller Roller",
+                            "Feed Dog",
+                            "Throat Plate",
+                            "Thread Tension Unit"
+                        ],
                         "image": None
                     },
                     {
@@ -834,6 +1007,18 @@ WORKFLOW_DATA = {
                         "input": "Raw-Edge Fabric Panels + 3 Threads (1 Needle, 2 Looper)",
                         "output": "Edge-Neatened Serpentine Overlocked Panel",
                         "purpose": "Flat-bed machine (1 needle, 2 loopers, Stitch Class 504, 3000+ RPM) used for single fabric edge finishing and neatening.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Upper Looper",
+                            "Lower Looper",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Upper Knife",
+                            "Lower Knife",
+                            "Differential Feed",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -842,6 +1027,15 @@ WORKFLOW_DATA = {
                         "input": "Garment Panels + 2 Needle & 2 Looper Threads",
                         "output": "Decoratively Zig-Zag Chainstitched Flat Seam",
                         "purpose": "Flat-bed machine (2 needles, 2 loopers, Stitch Class 404, 3000+ RPM, flat seam) used for decorative stitching on garments.",
+                        "functional_parts": [
+                            "Lateral Swinging Needle Bar",
+                            "2 Needles",
+                            "2 Chainstitch Loopers",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Throat Plate",
+                            "Thread Tension Discs"
+                        ],
                         "image": None
                     },
                     {
@@ -850,6 +1044,14 @@ WORKFLOW_DATA = {
                         "input": "Garment Fabric Edge + Sewing Thread",
                         "output": "Pattern-Decorated Garment Edge",
                         "purpose": "Uses 1 auto-movable needle with pre-installed software patterns for decorative stitching along fabric edges.",
+                        "functional_parts": [
+                            "Auto-Movable Needle Bar & Needle",
+                            "Chainstitch Looper",
+                            "Digital Pattern Control Panel",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Thread Tension Unit"
+                        ],
                         "image": None
                     },
                     {
@@ -858,6 +1060,17 @@ WORKFLOW_DATA = {
                         "input": "Garment Placket / Collar Band + 3 Threads",
                         "output": "Slit & Lockstitch-Finished Buttonhole",
                         "purpose": "Raised-bed computerized panel machine (1 needle, 3 threads, Stitch Class 304) that cuts and stitches clean buttonholes on fabric.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Presser Foot",
+                            "Button Clamp",
+                            "Cutting Knife",
+                            "Looper",
+                            "Hook",
+                            "Feed Mechanism",
+                            "Thread Trimmer"
+                        ],
                         "image": None
                     },
                     {
@@ -866,6 +1079,15 @@ WORKFLOW_DATA = {
                         "input": "Garment Panels / Trims + Lockstitch Thread",
                         "output": "Zig-Zag Lockstitched Decorative Seam",
                         "purpose": "Flat-bed machine (Stitch Class 315) used for decorative zig-zag lockstitching applications.",
+                        "functional_parts": [
+                            "Oscillating Needle Bar & Needle",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Rotary Hook & Bobbin Case",
+                            "Take-up Lever",
+                            "Thread Tension Disc",
+                            "Wide-Slot Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -874,6 +1096,16 @@ WORKFLOW_DATA = {
                         "input": "Garment Placket + 2-Hole or 4-Hole Buttons + Thread",
                         "output": "Button-Attached Garment Placket",
                         "purpose": "Cylinder-bed machine (1 needle, Stitch Class 304) designed for automatically attaching 2-hole or 4-hole buttons onto fabric.",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Button Clamp",
+                            "Presser Foot",
+                            "Hook",
+                            "Bobbin Case",
+                            "Feed Mechanism",
+                            "Thread Tension Unit"
+                        ],
                         "image": None
                     },
                     {
@@ -882,6 +1114,16 @@ WORKFLOW_DATA = {
                         "input": "Garment Panels + 5 Threads (2 Needle, 3 Looper)",
                         "output": "High-Strength Superimposed Safety-Stitched Seam",
                         "purpose": "Uses 2 needles and 3 loopers (Stitch Class 516, superimposed seam) for high-strength garment joining.",
+                        "functional_parts": [
+                            "Needle Bar & 2 Needles",
+                            "Upper Looper",
+                            "Lower Looper",
+                            "Safety Chainstitch Looper",
+                            "Presser Foot",
+                            "Feed Dog & Differential Feed",
+                            "Upper & Lower Trimming Knives",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -890,6 +1132,15 @@ WORKFLOW_DATA = {
                         "input": "Garment Yoke & Body Panels + 4 Threads (2 Needle, 2 Looper)",
                         "output": "Parallel Chain-Topstitched Back Yoke / Seam",
                         "purpose": "Flat-bed machine (2 needles, 2 loopers, 4 threads) used for topstitching and back yoke joining.",
+                        "functional_parts": [
+                            "Needle Bar & 2 Needles",
+                            "2 Chainstitch Loopers",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "Take-up Lever",
+                            "Thread Tension Disc",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -898,6 +1149,15 @@ WORKFLOW_DATA = {
                         "input": "Pocket & Garment Body Panels + 2 Needles & 2 Bobbins",
                         "output": "Double-Needle Lockstitched Pocket / Seam",
                         "purpose": "Flat-bed machine (2 needles with single-needle disengagement option, 2 bobbins, Stitch Class 301) used for pocket joining and heavy seams.",
+                        "functional_parts": [
+                            "Split Needle Bar & 2 Needles",
+                            "Presser Foot",
+                            "Feed Dog",
+                            "2 Vertical Axis Hooks & 2 Bobbin Cases",
+                            "Take-up Lever",
+                            "Dual Thread Tension Discs",
+                            "Throat Plate"
+                        ],
                         "image": None
                     },
                     {
@@ -906,6 +1166,14 @@ WORKFLOW_DATA = {
                         "input": "Garment Panel + Brand Label / Velcro Tape + Thread",
                         "output": "Label- or Velcro-Attached Garment Component",
                         "purpose": "Cylinder-bed 1-needle cyclic machine used for attaching labels, Velcro tapes, and decorative patches onto fabric.",
+                        "functional_parts": [
+                            "Needle Bar & Needle",
+                            "Programmable Work Clamp / Presser Foot",
+                            "X-Y Stepping Feed Mechanism",
+                            "Shuttle Hook & Bobbin Case",
+                            "Thread Trimmer",
+                            "Thread Tension Unit"
+                        ],
                         "image": None
                     },
                     {
@@ -914,6 +1182,14 @@ WORKFLOW_DATA = {
                         "input": "Knit or Woven Shirt Front / Waistband + Multi-Thread Cone Creel",
                         "output": "Multi-Row Chainstitched Box Pleat / Placket",
                         "purpose": "Raised-bed Kansai machine (4 to 12 needles, up to 12 loopers / 24 threads) used for sewing shirt box pleats and multi-row elastic/placket seams on knit and woven garments.",
+                        "functional_parts": [
+                            "Multi-Needle Head (4–12 Needles)",
+                            "Multi-Looper Bank (4–12 Loopers)",
+                            "Rear Puller Feed Roller",
+                            "Placket / Waistband Folder Guide",
+                            "Presser Foot & Feed Dog",
+                            "Throat Plate & Multi-Thread Tension Stand"
+                        ],
                         "image": None
                     },
                     {
@@ -922,6 +1198,14 @@ WORKFLOW_DATA = {
                         "input": "Jacket / Heavy Outerwear Placket + Chainstitch Thread",
                         "output": "Keyhole / Eyelet Buttonhole",
                         "purpose": "Raised-bed direct-drive specialty machine with auto thread trimmer used to create reinforced eyelet buttonholes on jackets and blazers.",
+                        "functional_parts": [
+                            "Needle Bar & Needle",
+                            "Keyhole Hammer & Cutting Die Block",
+                            "Left & Right Chainstitch Loopers",
+                            "Rotating Sewing Head & Clamp",
+                            "Feed Mechanism",
+                            "Automatic Thread Trimmer"
+                        ],
                         "image": None
                     },
                     {
@@ -930,6 +1214,17 @@ WORKFLOW_DATA = {
                         "input": "Assembled Garment Stress Points (Pocket Corners, Side Slits, Placket Base, Belt Loops)",
                         "output": "Bartack-Reinforced Garment Stress Points",
                         "purpose": "High-density cyclic lockstitch machine used to reinforce areas prone to high stress or tearing (Est. Market Price: $1,800 – $4,500).",
+                        "functional_parts": [
+                            "Needle Bar",
+                            "Needle",
+                            "Presser Foot",
+                            "Clamp",
+                            "Feed Dog",
+                            "Hook",
+                            "Bobbin Case",
+                            "Thread Trimmer",
+                            "Cutting Knife"
+                        ],
                         "image": None
                     },
                     {
@@ -938,6 +1233,14 @@ WORKFLOW_DATA = {
                         "input": "Garment Panels + Labels / Badges / Webbing Straps",
                         "output": "Program-Stitched Box-X, Label, or Decorative Pattern Assembly",
                         "purpose": "Computerized X-Y clamp sewing machine for automatic pattern stitching, label attachment, and decorative tacking (Est. Market Price: $4,000 – $15,000).",
+                        "functional_parts": [
+                            "Needle Bar & Needle",
+                            "Pneumatic Work Holding Clamp",
+                            "X-Y Servo Feed Carriage",
+                            "Rotary Hook & Bobbin Case",
+                            "Automatic Thread Trimmer",
+                            "Touchscreen Pattern Controller"
+                        ],
                         "image": None
                     },
                     {
@@ -946,6 +1249,14 @@ WORKFLOW_DATA = {
                         "input": "Garment Front / Trouser Panel + Welt Strip & Pocket Bag",
                         "output": "Precision-Slit & Stitched Single/Double Welt Pocket",
                         "purpose": "Automatically sews, slits, and corner-knifes single or double welt pockets on polo shirts, jackets, and trousers (Est. Market Price: $8,000 – $25,000).",
+                        "functional_parts": [
+                            "Twin Needle Bar & Needles",
+                            "Center Slitting Knife",
+                            "Corner Triangle Cutting Knives",
+                            "Welt Folding & Clamp Plate",
+                            "Laser Marking Lamps",
+                            "Auto Thread Trimmer & Hook Assembly"
+                        ],
                         "image": None
                     },
                     {
@@ -954,6 +1265,14 @@ WORKFLOW_DATA = {
                         "input": "Knit Jogger / Undergarment Waistband + Elastic Band + Sewing Thread",
                         "output": "Uniformly Tensioned Elastic-Attached Waistband",
                         "purpose": "Overlock or coverstitch machine equipped with a metered roller tension device for attaching elastic bands smoothly (Est. Market Price: $700 – $2,500).",
+                        "functional_parts": [
+                            "Needle Bar & Needles",
+                            "Loopers",
+                            "Metered Elastic Feed Roller Device",
+                            "Differential Feed Dog",
+                            "Presser Foot",
+                            "Right-Side Fabric Trimming Knife"
+                        ],
                         "image": None
                     },
                     {
@@ -962,6 +1281,13 @@ WORKFLOW_DATA = {
                         "input": "Hoodie / Jacket Front Panels + Continuous Zipper Chain & Stoppers",
                         "output": "Zipper-Attached Garment Front with Secured Top/Bottom Stoppers",
                         "purpose": "Attaches continuous zipper tapes evenly onto knit hoodies, track jackets, and trousers, paired with an automatic zipper stopper unit.",
+                        "functional_parts": [
+                            "Twin/Single Needle Bar",
+                            "Zipper Tape Guide Folder",
+                            "Zipper Foot & Feed Dog",
+                            "Rear Puller Feed",
+                            "Automatic Stopper Crimping Die"
+                        ],
                         "image": None
                     },
                     {
@@ -970,6 +1296,13 @@ WORKFLOW_DATA = {
                         "input": "Run-Stitched Collar, Cuff & Pocket Components",
                         "output": "Trimmed, Turned & Steam-Creased Collars, Cuffs & Pockets",
                         "purpose": "Includes collar contour trimming, pneumatic collar point turning/blocking, cuff blocking, cool-head collar creasing press, and pneumatic steam pocket creasing machines.",
+                        "functional_parts": [
+                            "Corner Trimming Knife & Die",
+                            "Point Turning Tongue / Rod",
+                            "Heated Blocking Mold & Expanders",
+                            "Pneumatic Pressing Cylinder",
+                            "Thermostat & Timer Control"
+                        ],
                         "image": None
                     },
                     {
@@ -978,6 +1311,14 @@ WORKFLOW_DATA = {
                         "input": "Knit/Woven Collar, Placket, Cuff, or Neck Panels + Fusible Interlining",
                         "output": "Thermally Bonded (Fused) Garment Components",
                         "purpose": "Continuous roller pressure and multi-zone heat fusing machine for bonding fusible interlining onto plackets, collars, and cuffs (Est. Market Price: $2,000 – $12,000).",
+                        "functional_parts": [
+                            "Conveyor Belt",
+                            "Heating Element",
+                            "Pressure Roller",
+                            "Cooling Roller",
+                            "Temperature Sensor",
+                            "Belt Tracking Unit"
+                        ],
                         "image": None
                     }
                 ]
@@ -998,6 +1339,13 @@ WORKFLOW_DATA = {
                         "input": "Cut Garment Panels + Printing Paste & Screens",
                         "output": "Wet Printed Garment Panels",
                         "purpose": "Applies multi-color plastisol, rubber, pigment, high-density, or discharge prints onto cut knit panels with precision registration.",
+                        "functional_parts": [
+                            "Mesh Printing Screens & Frames",
+                            "Rubber Squeegee & Flood Bar",
+                            "Rotating Printing Pallets / Platens",
+                            "Micro-Registration Clamps",
+                            "Intermediate IR Flash Curing Unit"
+                        ],
                         "image": None
                     },
                     {
@@ -1006,6 +1354,13 @@ WORKFLOW_DATA = {
                         "input": "Cut Panel or Garment + Heat Transfer Film / Tagless Label",
                         "output": "Heat-Transferred Graphic or Tagless Neck Label on Garment",
                         "purpose": "Pneumatic or manual flat-bed thermal press that transfers plastisol/sublimation graphics, vinyl logos, and tagless neck labels under controlled heat and pressure (Est. Market Price: $300 – $3,000).",
+                        "functional_parts": [
+                            "Teflon-Coated Upper Heating Platen",
+                            "Silicone-Padded Lower Bed",
+                            "Pneumatic Pressure Cylinder",
+                            "Digital Temperature & Time Controller",
+                            "Thermostat & Safety Two-Hand Switch"
+                        ],
                         "image": None
                     },
                     {
@@ -1014,6 +1369,13 @@ WORKFLOW_DATA = {
                         "input": "Wet Printed Garment Panels",
                         "output": "Cured Wash-Fast Printed Panels",
                         "purpose": "Polymerizes and fixes printing ink/paste onto the knit fabric at controlled temperature.",
+                        "functional_parts": [
+                            "PTFE / Teflon Mesh Conveyor Belt",
+                            "Infrared (IR) / Gas Heating Chamber",
+                            "Hot-Air Circulation Blower",
+                            "Temperature Sensor & Speed Controller",
+                            "Exhaust Hood & Cooling Zone"
+                        ],
                         "image": None
                     }
                 ]
@@ -1033,6 +1395,14 @@ WORKFLOW_DATA = {
                         "input": "Hooped Garment Panels + Stabilizer Backing + Embroidery Threads",
                         "output": "Embroidered Garment Panels",
                         "purpose": "Stitches multi-color logos, appliques, 3D puff, or sequin motifs simultaneously across multiple heads (Est. Market Price: $5,000 – $50,000+).",
+                        "functional_parts": [
+                            "Multi-Needle Embroidery Heads (9/12/15 Needles)",
+                            "X-Y Pantograph Frame & Hoops",
+                            "Rotary Hook & Bobbin Case Assembly",
+                            "Automatic Color-Change Mechanism",
+                            "Automatic Thread Trimmer & Break Sensor",
+                            "LCD Stitch Pattern Control Unit"
+                        ],
                         "image": None
                     }
                 ]
@@ -1056,6 +1426,13 @@ WORKFLOW_DATA = {
                         "input": "Sewn Garments + Water + Enzymes / Softeners / Washing Chemicals",
                         "output": "Washed & Softened Wet Garments",
                         "purpose": "Industrial rotary drum washing machines (front-loading for sample/medium batches and high-capacity side-loading for bulk) used for garment wash, enzyme bio-polishing, pigment wash, and silicon softening.",
+                        "functional_parts": [
+                            "Perforated Stainless-Steel Inner Drum",
+                            "Outer Liquor Vessel & Pneumatic Drain Valve",
+                            "Chemical Dosing Hopper",
+                            "Steam Heating Inlet & Temperature Sensor",
+                            "Variable-Frequency Drive (VFD) Motor"
+                        ],
                         "image": None
                     },
                     {
@@ -1064,6 +1441,12 @@ WORKFLOW_DATA = {
                         "input": "Raw Washing Auxiliaries, Enzymes, Dyes & Water",
                         "output": "Homogeneously Dissolved Chemical Liquor",
                         "purpose": "Agitated mixing tank that prepares uniform chemical, enzyme, and softener solutions prior to dosing into washing machines.",
+                        "functional_parts": [
+                            "Stainless-Steel Mixing Vessel",
+                            "Motorized Impeller Agitator",
+                            "Dosing Transfer Pump",
+                            "Level Gauge & Discharge Valve"
+                        ],
                         "image": None
                     },
                     {
@@ -1072,6 +1455,13 @@ WORKFLOW_DATA = {
                         "input": "Soaked Washed Garments",
                         "output": "Dewatered Damp Garments",
                         "purpose": "High-speed perforated stainless-steel centrifuge that extracts excess water from washed garments before tumble drying.",
+                        "functional_parts": [
+                            "Perforated Spinning Basket",
+                            "Outer Safety Casing & Interlock Lid",
+                            "High-Torque Drive Motor & Brake",
+                            "Suspension Springs / Dampers",
+                            "Water Drain Outlet"
+                        ],
                         "image": None
                     },
                     {
@@ -1080,6 +1470,13 @@ WORKFLOW_DATA = {
                         "input": "Hydro-Extracted Damp Garments",
                         "output": "Dried & Bulked Knit/Woven Garments",
                         "purpose": "Rotating tumble dryers heated by steam coils or gas burners to dry garments evenly while developing a soft, lofty hand-feel.",
+                        "functional_parts": [
+                            "Reversing Perforated Tumbler Drum",
+                            "Steam Heat Exchanger Coils / Gas Burner",
+                            "Exhaust Blower & Lint Filter Screen",
+                            "Temperature & Humidity Sensor",
+                            "Cooling Damper"
+                        ],
                         "image": None
                     },
                     {
@@ -1088,6 +1485,12 @@ WORKFLOW_DATA = {
                         "input": "Unwashed or Pre-Washed Garments (Denim, Heavy Fleece, Pigment-Dyed Knits)",
                         "output": "Whiskered, Edge-Ground, or Vintage-Faded Garments",
                         "purpose": "Performs localized surface abrasion, hem/edge grinding, sandblasting, or eco-friendly computer-guided laser whiskering and vintage patterning.",
+                        "functional_parts": [
+                            "CO2 Laser Resonator & Galvo Scanning Head",
+                            "High-Speed Abrasive Grinding Wheel",
+                            "Sand Blasting Nozzle & Enclosed Booth",
+                            "Garment Framing Table & Fume Extractor"
+                        ],
                         "image": None
                     },
                     {
@@ -1096,6 +1499,12 @@ WORKFLOW_DATA = {
                         "input": "Garments Mounted on Inflatable Dummies / Clips + Potassium Permanganate (P.P.) / Steam",
                         "output": "Locally Bleached / 3D Crinkle-Set Garments",
                         "purpose": "Applies localized P.P. spray mist in an exhaust booth for highlight fading and sets permanent 3D creases inside a pressurized steam crinkle chamber.",
+                        "functional_parts": [
+                            "Pneumatic P.P. Atomizing Spray Gun",
+                            "Inflatable Mannequin / Dummy",
+                            "Water-Curtain Exhaust Scrubbing Booth",
+                            "Steam Crinkle Chamber & Clips"
+                        ],
                         "image": None
                     },
                     {
@@ -1104,6 +1513,13 @@ WORKFLOW_DATA = {
                         "input": "Resin-Applied, 3D-Whiskered, or Pigment-Treated Garments",
                         "output": "Thermally Cured & Wrinkle-Set Garments",
                         "purpose": "Maintains precise curing temperatures to polymerize resins, fix pigment/tint washes, and lock in 3D crinkle effects.",
+                        "functional_parts": [
+                            "Insulated Curing Chamber",
+                            "Gas Burner / Electric Heating Elements",
+                            "Recirculation Air Fan",
+                            "Garment Trolley / Overhead Conveyor",
+                            "Digital PID Temperature Controller"
+                        ],
                         "image": None
                     },
                     {
@@ -1112,6 +1528,13 @@ WORKFLOW_DATA = {
                         "input": "Garment Batches & Washing Plant Effluent Water",
                         "output": "Tagged Garment Lots & Treated Compliant Discharge Water",
                         "purpose": "Attaches identification/scrunching tags prior to washing (Tagging Machine) and treats chemical/dye wastewater biologically and physico-chemically (ETP) to meet environmental compliance.",
+                        "functional_parts": [
+                            "Tagging Needle & Barb Feeder",
+                            "Bar Screen & Equalization Tank",
+                            "Coagulation / Flocculation Dosing Unit",
+                            "Biological Aeration Tank & Clarifier",
+                            "Sludge Filter Press"
+                        ],
                         "image": None
                     }
                 ]
@@ -1135,6 +1558,12 @@ WORKFLOW_DATA = {
                         "input": "Sewn Garments with Loose Thread Ends & Lint",
                         "output": "Clean, Thread-Free Garments",
                         "purpose": "Trims unclipped thread tails closely using vacuum-assisted cutter heads ($500 – $2,000) and sucks away loose lint/threads inside a high-suction chamber.",
+                        "functional_parts": [
+                            "Vacuum Suction Nozzle & Clipper Blade",
+                            "Centrifugal Suction Blower",
+                            "Perforated Garment Chamber",
+                            "Lint Collection Filter Bag"
+                        ],
                         "image": None
                     },
                     {
@@ -1143,22 +1572,46 @@ WORKFLOW_DATA = {
                         "input": "Garments with Oil, Grease, or Handling Marks + Spotting Solvent/Air/Steam",
                         "output": "Stain-Free Clean Garments",
                         "purpose": "Uses a high-pressure spotting spray gun, air/steam gun, and illuminated vacuum buck to dissolve and extract oil or dirt spots without leaving rings.",
+                        "functional_parts": [
+                            "High-Pressure Solvent Spotting Gun",
+                            "Air & Steam Drying Spray Gun",
+                            "Stainless-Steel Vacuum Spotting Arm",
+                            "Solvent Recovery Tank & Overhead Lamp"
+                        ],
                         "image": None
                     },
                     {
                         "step": "Metal Fastener Attachment & Safety Testing",
-                        "machine_name": "Snap Attach Full Pneumatic Machine, Shank Button Machine & Pull Testing Machine",
+                        "machine_name": "Snap Button Machine (Snap Attach, Shank Button & Pull Testing Machine)",
                         "input": "Garment Plackets + Metal Snaps / Prong Buttons / Shank Buttons",
                         "output": "Fastener-Attached & Pull-Tested Garments",
                         "purpose": "Clinches snap buttons ($300 – $1,500) and shank buttons pneumatically, and verifies fastener attachment strength on a Pull Testing Machine to meet child-safety standards.",
+                        "functional_parts": [
+                            "Upper Die",
+                            "Lower Die",
+                            "Punch",
+                            "Button Holder",
+                            "Material Clamp",
+                            "Feeding Mechanism",
+                            "Pull Force Gauge & Grip Clamp"
+                        ],
                         "image": None
                     },
                     {
                         "step": "Steam Generation, Ironing & Garment Pressing",
-                        "machine_name": "Steam Boiler, Industrial Steam Iron & Vacuum Ironing Table",
+                        "machine_name": "Steam Iron, Steam Boiler & Vacuum Ironing Table",
                         "input": "Clean Garments + Pressurized Steam",
                         "output": "Pressed, Wrinkle-Free & Dimensionally Set Garments",
                         "purpose": "Steam boiler ($2,000 – $25,000) supplies dry steam to industrial steam irons ($80 – $300) fitted with Teflon iron shoes/plates over suction vacuum tables ($250 – $1,200) and garment toppers.",
+                        "functional_parts": [
+                            "Sole Plate",
+                            "Heating Element",
+                            "Steam Valve",
+                            "Thermostat",
+                            "Steam Hose",
+                            "Solenoid Valve",
+                            "Vacuum Buck & Foot Pedal"
+                        ],
                         "image": None
                     },
                     {
@@ -1167,22 +1620,45 @@ WORKFLOW_DATA = {
                         "input": "Pressed Finished Garments",
                         "output": "Shade-Verified & Moisture-Approved Garments",
                         "purpose": "Verifies garment color consistency under multi-source light boxes, checks fabric moisture content before polybagging to prevent mold, and monitors room humidity and garment GSM/weight.",
+                        "functional_parts": [
+                            "Standard Illuminant Lamps (D65, TL84, CWF, UV)",
+                            "Conductivity Moisture Sensor Probe",
+                            "Humidity & Temperature Sensor",
+                            "Digital Load Cell Weighing Platform"
+                        ],
                         "image": None
                     },
                     {
-                        "step": "Folding, Tagging & Polybag Sealing",
-                        "machine_name": "Stand-Up Shirt Folding Table, Tag Gun & Plastic Stapler Machine",
+                        "step": "Folding, Tagging & Polybag Packing",
+                        "machine_name": "Folding & Packing Machine (with Folding Table, Tag Gun & Plastic Stapler)",
                         "input": "Inspected Garments + Hangtags, Size Stickers & Polybags",
                         "output": "Neatly Folded, Hang-Tagged & Polybagged Garments",
-                        "purpose": "Assists uniform garment folding (stand-up/pneumatic folding table) and attaches hangtags and packaging fasteners via tag guns and plastic stapler machines.",
+                        "purpose": "Automates or assists uniform garment folding, hangtag attachment, and polybagging for retail-ready presentation.",
+                        "functional_parts": [
+                            "Folding Plate",
+                            "Folding Roller",
+                            "Conveyor Belt",
+                            "Side Guide",
+                            "Air Cylinder",
+                            "Pneumatic Valve",
+                            "Packing Unit"
+                        ],
                         "image": None
                     },
                     {
                         "step": "Broken Needle & Metal Contamination Inspection",
-                        "machine_name": "Conveyor Needle Detector Machine",
+                        "machine_name": "Needle Detection Machine (Conveyor Needle Detector)",
                         "input": "Polybagged Finished Garments",
                         "output": "Metal-Free Safety Certified Garments",
                         "purpose": "Passes every finished garment through a magnetic induction tunnel to detect any ferrous metal or broken needle fragments (Est. Market Price: $1,500 – $6,000).",
+                        "functional_parts": [
+                            "Detection Head",
+                            "Metal Detector Coil",
+                            "Sensor",
+                            "Conveyor Belt",
+                            "Stop Mechanism",
+                            "Reject Mechanism"
+                        ],
                         "image": None
                     },
                     {
@@ -1191,6 +1667,12 @@ WORKFLOW_DATA = {
                         "input": "Needle-Detected Garment Polybags + Corrugated Export Cartons",
                         "output": "Barcode-Verified, Sealed, Strapped & Palletized Export Cartons",
                         "purpose": "Scans assortment barcodes, seals corrugated boxes with carton staplers, straps cartons with P.P. belting machines, and moves palletized shipments via forklift.",
+                        "functional_parts": [
+                            "Laser / 2D Barcode Scanner Head",
+                            "Pneumatic Carton Stapling Anvil & Magazine",
+                            "P.P. Strap Tensioning Roller & Heat Sealing Head",
+                            "Hydraulic Lifting Forks & Mast"
+                        ],
                         "image": None
                     }
                 ]

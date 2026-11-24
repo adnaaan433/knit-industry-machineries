@@ -1,0 +1,130 @@
+Department,Category,Related To,"M/C Name, Material & Process"
+Garments,Machine & Process,Stitch,Single Needle Lockstitch Machine
+Garments,Machine & Process,Stitch,Overlock Machine
+Garments,Machine & Process,Stitch,Flatlock Machine
+Garments,Machine & Process,Stitch,Feed-off-the-Arm Machine
+Garments,Machine & Process,Stitch,Button Sewing Machine
+Garments,Machine & Process,Stitch,Button Hole Machine
+Garments,Machine & Process,Stitch,Bartack Machine
+Garments,Machine & Process,Accessories,Snap Button Machine
+Garments,Machine & Process,Cutting,Cutting Machine
+Garments,Machine & Process,Fusing,Fusing Machine
+Garments,Machine & Process,Spreading,Fabric Spreading Machine
+Garments,Machine & Process,Stitch,Needle Detection Machine
+Garments,Machine & Process,Finishing,Steam Iron
+Garments,Machine & Process,Finishing,Folding and Packing Machines
+Garments,Machine & Process,Cutting,Marker Making
+Garments,Machine & Process,Cutting,Fabric Spreading
+Garments,Machine & Process,Cutting,Fabric Cutting
+Garments,Machine & Process,Sorting,Numbering and Bundling
+Garments,Machine & Process,Cutting,CAD
+Garments,Functional Parts,Single Needle Lockstitch Machine,Needle Bar
+Garments,Functional Parts,Single Needle Lockstitch Machine,Needle
+Garments,Functional Parts,Single Needle Lockstitch Machine,Presser Foot
+Garments,Functional Parts,Single Needle Lockstitch Machine,Feed Dog
+Garments,Functional Parts,Single Needle Lockstitch Machine,Bobbin Case
+Garments,Functional Parts,Single Needle Lockstitch Machine,Hook
+Garments,Functional Parts,Single Needle Lockstitch Machine,Take-up Lever
+Garments,Functional Parts,Single Needle Lockstitch Machine,Thread Tension Disc
+Garments,Functional Parts,Single Needle Lockstitch Machine,Throat Plate
+Garments,Functional Parts,Overlock Machine,Needle Bar
+Garments,Functional Parts,Overlock Machine,Needle
+Garments,Functional Parts,Overlock Machine,Upper Looper
+Garments,Functional Parts,Overlock Machine,Lower Looper
+Garments,Functional Parts,Overlock Machine,Presser Foot
+Garments,Functional Parts,Overlock Machine,Feed Dog
+Garments,Functional Parts,Overlock Machine,Upper Knife
+Garments,Functional Parts,Overlock Machine,Lower Knife
+Garments,Functional Parts,Overlock Machine,Differential Feed
+Garments,Functional Parts,Overlock Machine,Throat Plate
+Garments,Functional Parts,Flatlock Machine,Needle Bar
+Garments,Functional Parts,Flatlock Machine,Needles
+Garments,Functional Parts,Flatlock Machine,Looper
+Garments,Functional Parts,Flatlock Machine,Spreader
+Garments,Functional Parts,Flatlock Machine,Presser Foot
+Garments,Functional Parts,Flatlock Machine,Feed Dog
+Garments,Functional Parts,Flatlock Machine,Differential Feed
+Garments,Functional Parts,Flatlock Machine,Throat Plate
+Garments,Functional Parts,Button Sewing Machine,Needle Bar
+Garments,Functional Parts,Button Sewing Machine,Needle
+Garments,Functional Parts,Button Sewing Machine,Button Clamp
+Garments,Functional Parts,Button Sewing Machine,Presser Foot
+Garments,Functional Parts,Button Sewing Machine,Hook
+Garments,Functional Parts,Button Sewing Machine,Bobbin Case
+Garments,Functional Parts,Button Sewing Machine,Feed Mechanism
+Garments,Functional Parts,Button Sewing Machine,Thread Tension Unit
+Garments,Functional Parts,Button Hole Machine,Needle Bar
+Garments,Functional Parts,Button Hole Machine,Needle
+Garments,Functional Parts,Button Hole Machine,Presser Foot
+Garments,Functional Parts,Button Hole Machine,Button Clamp
+Garments,Functional Parts,Button Hole Machine,Cutting Knife
+Garments,Functional Parts,Button Hole Machine,Looper
+Garments,Functional Parts,Button Hole Machine,Hook
+Garments,Functional Parts,Button Hole Machine,Feed Mechanism
+Garments,Functional Parts,Button Hole Machine,Thread Trimmer
+Garments,Functional Parts,Bartack Machine,Needle Bar
+Garments,Functional Parts,Bartack Machine,Needle
+Garments,Functional Parts,Bartack Machine,Presser Foot
+Garments,Functional Parts,Bartack Machine,Clamp
+Garments,Functional Parts,Bartack Machine,Feed Dog
+Garments,Functional Parts,Bartack Machine,Hook
+Garments,Functional Parts,Bartack Machine,Bobbin Case
+Garments,Functional Parts,Bartack Machine,Thread Trimmer
+Garments,Functional Parts,Bartack Machine,Cutting Knife
+Garments,Functional Parts,Snap Button Machine,Upper Die
+Garments,Functional Parts,Snap Button Machine,Lower Die
+Garments,Functional Parts,Snap Button Machine,Punch
+Garments,Functional Parts,Snap Button Machine,Button Holder
+Garments,Functional Parts,Snap Button Machine,Material Clamp
+Garments,Functional Parts,Snap Button Machine,Feeding Mechanism
+Garments,Functional Parts,Cutting Machine,Cutting Blade
+Garments,Functional Parts,Cutting Machine,Blade Sharpener
+Garments,Functional Parts,Cutting Machine,Presser Foot
+Garments,Functional Parts,Cutting Machine,Blade Guide
+Garments,Functional Parts,Cutting Machine,Motor
+Garments,Functional Parts,Cutting Machine,Base Plate
+Garments,Functional Parts,Fusing Machine,Conveyor Belt
+Garments,Functional Parts,Fusing Machine,Heating Element
+Garments,Functional Parts,Fusing Machine,Pressure Roller
+Garments,Functional Parts,Fusing Machine,Cooling Roller
+Garments,Functional Parts,Fusing Machine,Temperature Sensor
+Garments,Functional Parts,Fusing Machine,Belt Tracking Unit
+Garments,Functional Parts,Fabric Spreading Machine,Spreading Carriage
+Garments,Functional Parts,Fabric Spreading Machine,Fabric Roll Holder
+Garments,Functional Parts,Fabric Spreading Machine,Spreading Roller
+Garments,Functional Parts,Fabric Spreading Machine,Edge Control Sensor
+Garments,Functional Parts,Fabric Spreading Machine,Tension Control Unit
+Garments,Functional Parts,Fabric Spreading Machine,Fabric Clamp
+Garments,Functional Parts,Fabric Spreading Machine,Drive Motor
+Garments,Functional Parts,Needle Detection Machine,Detection Head
+Garments,Functional Parts,Needle Detection Machine,Metal Detector Coil
+Garments,Functional Parts,Needle Detection Machine,Sensor
+Garments,Functional Parts,Needle Detection Machine,Conveyor Belt
+Garments,Functional Parts,Needle Detection Machine,Stop Mechanism
+Garments,Functional Parts,Needle Detection Machine,Reject Mechanism
+Garments,Functional Parts,Steam Iron,Sole Plate
+Garments,Functional Parts,Steam Iron,Heating Element
+Garments,Functional Parts,Steam Iron,Steam Valve
+Garments,Functional Parts,Steam Iron,Thermostat
+Garments,Functional Parts,Steam Iron,Steam Hose
+Garments,Functional Parts,Steam Iron,Solenoid Valve
+Garments,Functional Parts,Folding & Packing Machine,Folding Plate
+Garments,Functional Parts,Folding & Packing Machine,Folding Roller
+Garments,Functional Parts,Folding & Packing Machine,Conveyor Belt
+Garments,Functional Parts,Folding & Packing Machine,Side Guide
+Garments,Functional Parts,Folding & Packing Machine,Air Cylinder
+Garments,Functional Parts,Folding & Packing Machine,Pneumatic Valve
+Garments,Functional Parts,Folding & Packing Machine,Packing Unit
+Garments,Functional Parts,Marker Making / CAD,Digitizer
+Garments,Functional Parts,Marker Making / CAD,CAD Workstation
+Garments,Functional Parts,Marker Making / CAD,Plotter
+Garments,Functional Parts,Marker Making / CAD,Plotter Head
+Garments,Functional Parts,Marker Making / CAD,Pen Holder
+Garments,Functional Parts,Marker Making / CAD,Scanner
+Garments,Functional Parts,Marker Making / CAD,Cutting Head
+Garments,Functional Parts,Numbering & Bundling,Numbering Head
+Garments,Functional Parts,Numbering & Bundling,Numbering Wheel
+Garments,Functional Parts,Numbering & Bundling,Ink Roller
+Garments,Functional Parts,Numbering & Bundling,Numbering Stamp
+Garments,Functional Parts,Numbering & Bundling,Bundle Clamp
+Garments,Functional Parts,Numbering & Bundling,Tag Holder
